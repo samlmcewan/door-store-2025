@@ -1,0 +1,127 @@
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+    .top-bar {
+        display: flex!important;
+        flex-basis: auto;
+        border-bottom: 0;
+}
+.mobile-search-btn {
+    display: none;
+}
+
+#main-nav .nav-item.active a {
+    border-left: none;
+    border-bottom: 2px solid var(--cyan);
+    color: var(--cyan);
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+
+.navbar-nav .nav-item, .navbar ul li:first-child {
+    /* padding: 0; */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#main-nav .nav-item a {
+    font-size: 1rem;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+
+.navbar .top-bar {
+    background-color: var(--black);
+}
+.contact-col {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.contact-header {
+    height: 100%;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+.contact-container {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* margin-left: auto; */
+    height: 100%;
+    padding-left: 4rem;
+    padding-right: 1rem;
+}
+.contact-container a{
+    padding: .5rem;
+    text-decoration: none;
+}
+.contact-container a.phone {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+.contact-container a.email {
+    color: var(--white);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .3s;
+}
+.contact-container .phone-svg {
+    position: absolute;
+    left: -1.5rem;
+    height: 100%;
+}
+.contact-container .triangle-svg {
+    position: absolute;
+    right: -1.25rem;
+    height: 100%;
+}
+.contact-container a.phone:hover {
+    color: var(--blue-light);
+}
+.contact-container a.email:hover {
+    color: var(--blue-light);
+}
+#main-nav {
+    margin-top: -1rem;
+}
+#main-nav .site-logo-top svg {
+    width: 25rem;
+}
+
+
+    .hero-text h1, .inner-header h1 {
+        font-size: 4rem;
+    }
+    .guide h2, .our-doors h2, .about-us h2, .testimonials h2 {
+        font-size: 2.9rem;
+    }
+    .testimonials h2 {
+        font-size: 4.5rem;
+    }
+    .testimonials-text p {
+        font-size: 1.93rem;
+    }
+    .testimonials-text .text-footer {
+        font-size: 1.125rem;
+    }
+    .inner-header h1 {
+        margin-bottom: 1rem;
+    }
+    .inner-header p {
+        font-size: 1.5rem;
+    }
+    .doors-landing-cards a:hover, .doors-landing-cards .card:hover {
+        background-color: var(--black);
+        cursor: pointer;
+    }
+}
+        

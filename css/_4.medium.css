@@ -1,0 +1,115 @@
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+ 
+    .hero, .section {
+ 
+        overflow: hidden;
+    }
+    .hero {
+        /* overflow-y: visible; */
+        /* background-color: unset;*/
+        /* height: 50vh;  */
+    }
+    .hero .color {
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--blue);
+    }
+    .hero .swiper {
+        overflow: hidden;
+    }
+    .hero-text h1, .inner-header h1 {
+  
+        font-size: 1.9rem;
+    }
+    .hero .row {
+        position: relative;
+    }
+
+    .hero .row .hero-hexagon-2 {
+        background-color: var(--black);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        left: 60%;
+        /* z-index: 999; */
+    }
+
+    .hero .hero-text {
+        padding-bottom: 0;
+        z-index: 9;
+    }
+    .hero .hero-text h1 {
+        z-index: 9999;
+    }
+    .hero .hero-text-container {
+        clip-path: unset;
+        padding-bottom: 0;
+        background-color: unset;
+        position: relative;
+    }
+
+    .hero-hexagon-blue {
+        background-color: var(--blue-dark);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        position: absolute;
+        /* top:0; */
+        bottom: -5rem;
+        left: -3rem;
+        z-index: 1;
+    }
+
+    
+    .hero-text-container, .testimonials-text-container {
+        height: fit-content;
+    }
+
+    .guide h2, .our-doors h2, .about-us h2, .testimonials h2 {
+        font-size: 2.8rem;
+    }
+    .guide hr {
+        display: none;
+    }
+    .about-us .card svg {
+        height: 80px;
+    }
+    .about-us .card h3 {
+        font-size: 1.2rem;
+    }
+    .testimonials-text p {
+        font-size: 1.125rem;
+    }
+
+    .inner-header .container {
+        margin-bottom: 5em;
+
+    }
+    .inner-header img {
+        margin-bottom: -14em;
+    }
+    .inner-header p {
+        font-size: 1rem;
+    }
+
+    .doors-landing-cards .card h2 {
+        font-size: 2.3rem;
+    }
+    .doors-landing-cards .card .card-header {
+        min-height: 120px;
+    }
+
+        /* Footer - Medium devices */
+    
+        .shfooter .collapse {
+            display: none;
+        }
+  
+    
+}
