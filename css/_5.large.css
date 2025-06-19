@@ -2,6 +2,8 @@
 
 @media (min-width: 992px) {
 
+  
+
 
 .guide .container-fluid .container {
     width: 100%!important;
@@ -19,46 +21,15 @@
 .guide .card h3 {
     font-size: 1.5rem;
 }
-.testimonials h2 {
-    font-size: 3rem;}
-.about-us .card h3 {
-    font-size: 1.5rem;
+.our-doors-home p {
+    font-size: 1.875rem;
 }
-
-.testimonials-text p {
-    font-size: 1.35rem;
+.our-doors-home a.card p:nth-of-type(3) {
+    font-size: 1rem;
 }
-
-.inner-header .container {
-    margin-bottom: 5em;
-
+.guide .card {
+    min-height: 19rem;
 }
-.inner-header img {
-    margin-bottom: -6em;
-}
-
-.doors-landing-cards .card h2 {
-    font-size: 2rem;
-}
-.doors-landing-cards .card .card-header {
-    min-height: 120px;
-}
-
-/* Door  */
-.door-info .container {
-    border-top: 5px solid var(--offWhite);
-    border-left: 5px solid var(--offWhite);
-    border-right: 5px solid var(--offWhite);
-}
-.door-info .door-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-/* .door-text {
-    border-left: 5px solid var(--gold);
-    border-right: 5px solid var(--gold);
-} */
 
 /* Footer - Large Devices */
 

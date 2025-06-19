@@ -1,8 +1,15 @@
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+    .section-triangle {
+        margin-left: 10vw;
+    }
+    .section-triangle.right-triangle {
+        margin-left: 60vw;
+        /* margin-top: -4rem; */
+      }
  
-    .hero, .section {
+    .hero, .section, .testimonials {
  
         overflow: hidden;
     }
@@ -65,51 +72,109 @@
         left: -3rem;
         z-index: 1;
     }
+    .guide .card {
+        min-height: 23rem;
+    }
 
     
     .hero-text-container, .testimonials-text-container {
         height: fit-content;
     }
 
-    .guide h2, .our-doors h2, .about-us h2, .testimonials h2 {
+    .guide h2 {
         font-size: 2.8rem;
     }
     .guide hr {
         display: none;
     }
-    .about-us .card svg {
-        height: 80px;
+    .our-doors-home p {
+        font-size: 1.25rem;
     }
-    .about-us .card h3 {
-        font-size: 1.2rem;
-    }
-    .testimonials-text p {
-        font-size: 1.125rem;
+    .our-doors-home a.card p:nth-of-type(3) {
+        font-size: .75rem;
     }
 
-    .inner-header .container {
-        margin-bottom: 5em;
-
+    .about-us .card-col {
+        flex-direction: row;
+        /* margin: 0 2rem; */
+        justify-content: center;
     }
-    .inner-header img {
-        margin-bottom: -14em;
-    }
-    .inner-header p {
-        font-size: 1rem;
-    }
-
-    .doors-landing-cards .card h2 {
-        font-size: 2.3rem;
-    }
-    .doors-landing-cards .card .card-header {
-        min-height: 120px;
+    .about-us .card-col .card-divider {
+        border-bottom: none;
+        border-left: 2px solid var(--black);
+        width: 2px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        margin-right: -10rem;
     }
 
-        /* Footer - Medium devices */
+    .testimonials {
+        padding-top: 4rem;
+    }
     
-        .shfooter .collapse {
-            display: none;
-        }
+    .testimonials .color {
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--blue);
+    }
+
+    .testimonials-text h1, .inner-header h1 {
+  
+        font-size: 1.9rem;
+    }
+    .testimonials .row {
+        position: relative;
+    }
+    .testimonials-hexagon-testimonials-black {
+        transform: rotate(90deg);
+        /* z-index: 9999; */
+    }
+
+    .testimonials .row .testimonials-hexagon-2 {
+        background-color: var(--black);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        left: 60%;
+        /* z-index: 999; */
+    }
+
+    .testimonials .testimonials-text {
+        padding-bottom: 0;
+        z-index: 9;
+    }
+    .testimonials .testimonials-text h1 {
+        z-index: 9999;
+    }
+    .testimonials .testimonials-text-container {
+        clip-path: unset;
+        padding-bottom: 0;
+        background-color: unset;
+        position: relative;
+    }
+
+    .testimonials-hexagon-blue {
+        background-color: var(--blue-dark);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        position: absolute;
+        /* top:0; */
+        bottom: -5rem;
+        left: -3rem;
+        z-index: 1;
+    }
+
+    /* Footer - Medium devices */
+
+    .shfooter .collapse {
+        display: none;
+    }
   
     
 }

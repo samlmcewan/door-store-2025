@@ -60,3 +60,92 @@ if (herotext) {
     heroHexagon3.style.height = `${newHeight3}px`;
   }
 }
+
+
+// TESTIMONIALS /////////
+
+// Select the .testimonials-img element
+const testimonialsImg = document.querySelector('.testimonials-img');
+
+// Make sure the element exists before continuing
+if (testimonialsImg) {
+  const testimonialsWidth = testimonialsImg.offsetWidth;
+  const testimonialsHeight = testimonialsImg.offsetHeight;
+
+  // Calculate 105% of the original width and height
+  const newTestimonialsWidth = testimonialsWidth * 1.05;
+  const newTestimonialsHeight = testimonialsHeight * 1.05;
+
+  // Select the .testimonials-hexagon element
+  const testimonialsHexagon = document.querySelector('.testimonials-hexagon');
+
+  // Set the new width and height if the second element exists
+  if (testimonialsHexagon) {
+    testimonialsHexagon.style.width = `${newTestimonialsWidth}px`;
+    testimonialsHexagon.style.height = `${newTestimonialsHeight}px`;
+  }
+}
+
+const testimonials = document.querySelector('.testimonials');
+
+// Make sure the element exists before continuing
+if (testimonials) {
+  const heightTestimonials2 = testimonials.offsetHeight;
+
+  // Calculate 105% of the original width and height
+  const newTestimonialsHeight2 = heightTestimonials2 * .9;
+  const newTestimonialsWidth2 = heightTestimonials2 * 1.05;
+
+  // Select the .testimonials-hexagon element
+  const testimonialsHexagon2 = document.querySelector('.testimonials-hexagon-2');
+
+  // Set the new width and height if the second element exists
+  if (testimonialsHexagon2) {
+    testimonialsHexagon2.style.width = `${newTestimonialsWidth2}px`;
+    testimonialsHexagon2.style.height = `${newTestimonialsHeight2}px`;
+  }
+}
+
+// Broken, ignore
+const testimonialstext = document.querySelector('.testimonials-text');
+
+// Make sure the element exists before continuing
+if (testimonialstext) {
+  const computedStyle = window.getComputedStyle(testimonialstext);
+
+  const heightTestimonials3 = testimonialstext.offsetHeight;
+  const widthTestimonials3 = testimonialstext.offsetWidth;
+
+  const leftPadding = computedStyle.paddingLeft;
+  const rightPadding = computedStyle.paddingRight;
+  const topPadding = computedStyle.paddingTop;
+  const bottomPadding = computedStyle.paddingBottom;
+
+  const actualWidth = widthTestimonials3 - (leftPadding + rightPadding)
+  const actualHeight = heightTestimonials3 - (topPadding + bottomPadding)
+
+  let largestDimension;
+
+  if(actualWidth > actualHeight) {
+    largestDimension = actualWidth
+  } else {
+    largestDimension = actualHeight
+  }
+
+  console.log(`width: ${actualWidth}`)
+  console.log(`height: ${actualHeight}`)
+  console.log(`largest: ${largestDimension}`)
+
+  // Calculate 105% of the original width and height
+  const newTestimonialsHeight3 = largestDimension * 1.15;
+  const newTestimonialsWidth3 = largestDimension * 1.55;
+
+  // Select the .testimonials-hexagon element
+  const testimonialsHexagon3 = document.querySelector('.testimonials-hexagon-blue');
+
+  // Set the new width and height if the second element exists
+  if (testimonialsHexagon3) {
+    testimonialsHexagon3.style.width = `${newTestimonialsWidth3}px`;
+    testimonialsHexagon3.style.height = `${newTestimonialsHeight3}px`;
+  }
+}

@@ -96,32 +96,35 @@
 #main-nav .site-logo-top svg {
     width: 25rem;
 }
+.guide .card {
+    margin: 0 .75rem;
+    min-height: 20rem;
+}
+.guide .card .card-body {
+    padding-bottom: 0;
+}
 
-
-    .hero-text h1, .inner-header h1 {
+    .hero-text h1 {
         font-size: 4rem;
     }
-    .guide h2, .our-doors h2, .about-us h2, .testimonials h2 {
-        font-size: 2.9rem;
+    .guide h2 {
+        font-size: 2rem;
     }
-    .testimonials h2 {
-        font-size: 4.5rem;
-    }
-    .testimonials-text p {
-        font-size: 1.93rem;
-    }
-    .testimonials-text .text-footer {
-        font-size: 1.125rem;
-    }
-    .inner-header h1 {
-        margin-bottom: 1rem;
-    }
-    .inner-header p {
+
+    .testimonials p {
         font-size: 1.5rem;
     }
-    .doors-landing-cards a:hover, .doors-landing-cards .card:hover {
-        background-color: var(--black);
-        cursor: pointer;
+    
+    .testimonials p:nth-of-type(2) {
+        text-transform: unset;
+        font-style: italic;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        
     }
+    .testimonials p:nth-of-type(3) {
+        font-size: 1rem;
+    }
+    
 }
         

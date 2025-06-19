@@ -12,22 +12,40 @@ body {
 h1, h2, h3, h4 {
     font-weight: 600;
 }
-
-  .btn.btn-gold {
-    background-color: var(--gold);
-    border-radius: 0;
-    color: #ffffff;
-    font-size: 1.25rem;
-    font-weight: 400;
-    padding: 1em;
-    text-transform: uppercase;
-  }
+p {
+    font-size: 1.125rem;
+}
   .v-hidden {
     visibility: hidden;
   }
-  /* *:hover {
-    cursor: pointer!important;
-  } */
+  .section-h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .upp {
+    text-transform: uppercase;
+  }
+.section-triangle {
+    margin-top: -2rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    max-height: 135px;
+}
+
+.btn.btn-white-outline {
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    transition: all 0.3s;
+    width: fit-content;
+}
+.btn.btn-white-outline:hover {
+    color: var(--blue-dark);
+    background-color: var(--white);
+}
 
 /*--------------------------------------------------------------
 # Top Bar
@@ -444,11 +462,12 @@ h1, h2, h3, h4 {
 # Hero - Homepage
 --------------------------------------------------------------*/
 .section {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .hero {
     position: relative;
     background-color: var(--blue);
+    overflow: hidden;
 }
 .hero .container-fluid, .hero .container, .hero .row, .hero .col-12, .hero .swiper-wrapper, .hero .swiper-slide, .hero .hero-img-container {
     overflow: visible;
@@ -478,15 +497,6 @@ h1, h2, h3, h4 {
     object-fit: cover;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
-/* .hero .hero-text-container .hero-hexagon {
-    width: 100vw;
-    height: 100vw;
-    background-color: var(--blue-dark);
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    position: absolute;
-    top: 0;
-    left: -3rem;
-} */
 .hero .swiper .hero-hexagon {
     transform: rotate(90deg);
     background-color: var(--black);
@@ -494,7 +504,6 @@ h1, h2, h3, h4 {
     position: absolute;
     top: 0;
     right: -2rem;
-    /* z-index: 999; */
 }
 /*--------------------------------------------------------------
 # Guide - Homepage
@@ -520,340 +529,186 @@ h1, h2, h3, h4 {
     font-size: 2rem;
     text-align: center;
 }
-.guide svg {
+.guide .card svg {
     max-height: 135px;
     margin: -2rem 0 1rem 0;
-}
-
-.guide .section-triangle {
-    
 }
 
 /*--------------------------------------------------------------
 # Our Doors - Homepage
 --------------------------------------------------------------*/
-.our-doors .container-fluid {
-    background-color: var(--black);
+.our-doors-home a.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 2.5rem;
 }
-.our-doors h2 {
-    color: var(--gold);
-    font-size: 2.6rem;
+.our-doors-home a.card svg {
+    width: 75%;
+    margin-bottom: 1.5rem;
 }
-.our-doors h2 span {
-    color: #ffffff;
+.our-doors-home p {
+    text-transform: uppercase;
+    font-size: 1.875rem;
 }
-.our-doors .card {
-    background-color: transparent;
-    border-radius: 14px;
+.our-doors-home a {
+    text-decoration: none;
+    color: var(--black);
+}
+.our-doors-home a.card p:nth-of-type(2) {
+    color: var(--blue);
+    margin-top: -1.75rem;
     transition: all .3s;
 }
-.our-doors h3 {
-    text-transform: uppercase;
+.our-doors-home a.card p:nth-of-type(3) {
+    font-size: 1rem;
+    transition: all .3s;
+    margin-top: -.5rem;
 }
-.our-doors h3 span, .our-doors p span {
-    color: var(--gold);
+.our-doors-home a.card svg polyline {
+    transition: all .3s;
 }
-.our-doors a {
-    color: #ffffff;
-    text-decoration: none;
-}
-.our-doors svg {
-    max-height: 155px;
-    max-width: 80%;
-    object-fit: cover;
-}
-.our-doors a {
-    border: 1px solid #B6AC943a;
-}
-.our-doors .card:hover {
-    background-color: var(--gold);
-    cursor: pointer;
-}
-
-.our-doors .card:hover svg g polyline, .our-doors .card:hover svg g path, .our-doors .card:hover svg g rect, .our-doors .card:hover svg g polygon {
+.our-doors-home a.card:hover svg polyline {
     fill: var(--black)!important;
 }
-
-.our-doors .card:hover h3, .our-doors .card:hover h3 span, .our-doors .card:hover p, .our-doors .card:hover p span {
+.our-doors-home a.card:hover p:nth-of-type(2) {
     color: var(--black);
+}
+.our-doors-home a.card:hover p:nth-of-type(3) {
+    transform: translateY(-1rem);
 }
 
 /*--------------------------------------------------------------
-# About Us homepage
+# About Us - Homepage
 --------------------------------------------------------------*/
-.about-us h2 {
-    font-size: 2.6rem;
-    font-weight: 600;
-}
-.about-us h2 span {
-    color: var(--gold);
-}
-.about-us .card {
-    background-color: var(--black);
-    border-radius: 14px;
-}
-.about-us .card svg {
-    height: 100px;
-}
-.about-us .card h3 {
-    font-size: 1.5rem;
-}
-.about-us .card h3, .about-us .card p {
-    color: #ffffff;
-    text-transform: uppercase;
-}
-.about-us .card p span {
-    color: var(--gold);
+.about-us {
+    background-color: var(--grayLight);
+    margin-top: -6.9rem;
+    padding-top: 7rem !important;
 }
 .about-us a.card {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us a.card svg {
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+.about-us a {
     text-decoration: none;
-    transition: all 0.3s;
-}
-
-.about-us .card:hover {
-    background-color: var(--gold);
-    cursor: pointer;
-}
-
-.about-us .card:hover h3, .about-us .card:hover p, .about-us .card:hover p span {
     color: var(--black);
 }
-
-.about-us .card:hover svg, .about-us .card:hover svg g path, .about-us .card:hover svg g rect, .about-us .card:hover svg g polygon {
-    fill: var(--black)!important;
+.about-us a.card p {
+    text-transform: uppercase;
+    transition: all .3s;
+    text-align: center;
+}
+.about-us .card-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us .card-col .card-divider {
+    border-bottom: 2px solid var(--black);
+    width: 100px;
+    height: 2px;
+    margin: 1.25rem 0 2.5rem 0;
+}
+.about-us .desktop-div {
+    width: 2px;
+    height: 4rem;
+    background-color: var(--black);
 }
 /*--------------------------------------------------------------
 # Testimonials - Homepage
 --------------------------------------------------------------*/
-@media(max-width: 991px) {
-    .testimonials .container {
-        padding-left: 0;
-        padding-right: 0;
-        overflow: hidden;
-    }
+.testimonials {
+    position: relative;
+    background-color: var(--blue);
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
-.testimonials .container-fluid {
-    background-color: var(--gold);
+.testimonials .container-fluid, .testimonials .container, .testimonials .row, .testimonials .col-12, .testimonials .swiper-wrapper, .testimonials .swiper-slide, .testimonials .testimonials-img-container {
+    overflow: visible;
 }
-.testimonials img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.testimonials-text-container {
-    background-color: var(--black);
-    height: 100%;
-}
-.testimonials-text {
-    border: 10px solid var(--gold)
-}
-.testimonials-text p {
-    color: #ffffff;
-    font-size: 1.25rem;
-}
-.testimonials-text .text-footer {
-    color: var(--gold);
+.testimonials p {
+    color: var(--white);
+    font-weight: 300;
+    line-height: 1.34;
     text-transform: uppercase;
+}
+
+.testimonials p:nth-of-type(2) {
+    text-transform: unset;
+    font-style: italic;
     font-size: 1rem;
+    line-height: 1.5;
+    
 }
-.testimonials-text span {
-    color: #ffffff;
+.testimonials p:nth-of-type(3) {
+    font-size: .65rem;
 }
-.testimonials h2 {
-    font-size: 2.6rem;
+.testimonials .testimonials-img-container, .testimonials .swiper-slide {
+    position: relative;
 }
-.testimonials h2 span {
-    color: #ffffff;
+.testimonials .testimonials-text-container {
+    /* background-color: var(--blue-dark); */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    padding: 2rem;
+    margin-left: -5rem;
+    margin-bottom: -3rem;
 }
+.testimonials .testimonials-text{
+    padding: 0 3rem 2rem 5rem;
+    margin-bottom: 3rem;
+    z-index: 9;
+    position: relative;
+}
+.testimonials .testimonials-img {
+    width: 90%;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.testimonials .swiper .testimonials-hexagon {
+    transform: rotate(90deg);
+    background-color: var(--black);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: absolute;
+    top: 0;
+    right: -2rem;
+}
+
+.testimonials .testimonials-header {
+    clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%);
+    background-color: var(--blue-light);
+    padding: 2rem 1.5rem;margin-left: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials .testimonials-header h2 {
+    color: var(--black);
+    font-weight: 400;
+}
+.testimonials .testimonials-header h2 span {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
 
 /*--------------------------------------------------------------
 # Inner Header
 --------------------------------------------------------------*/
-.inner-header .container {
-    background-color: var(--black);
-    margin-bottom: 6em;
-}
-.inner-header h1 span , .inner-header p {
-    color: #ffffff;
-}
-.inner-header h1 {
-    color: var(--gold);
-    font-size: 2.6rem;
-}
 
-.inner-header img {
-    border: 10px solid var(--gold);
-    width: 100%;
-    margin-bottom: -5em;
-}
-.inner-header p:last-of-type {
-    margin-bottom: 0;
-}
-
-/* Landing Cards  */
-.doors-landing-cards .sub-title {
-    color: var(--gold);
-    font-size: 1.75rem;
-    margin-bottom: 0;
-}
-.doors-landing-cards .card {
-    background-color: var(--offWhite);
-    transition: all .3s;
-}
-.doors-landing-cards .card-header, .doors-landing-cards .card-footer, .doors-landing-cards .card-body {
-    background-color: transparent;
-}
-.doors-landing-cards .card, .doors-landing-cards .card-header, .doors-landing-cards .card-footer {
-    border: none;
-    border-radius: 0;
-}
-.doors-landing-cards img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-}
-.doors-landing-cards h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-.doors-landing-cards a {
-    text-decoration: none;
-    color: var(--black);
-}
-.doors-landing-cards .row .col-md-6.col-lg-4:last-child .sub-title {
-    visibility: hidden;
-}
-.doors-landing-cards a:hover, .doors-landing-cards .card:hover {
-    background-color: var(--black);
-    cursor: pointer;
-}
-.doors-landing-cards a:hover h2, .doors-landing-cards a:hover .sub-title {
-    color: var(--gold);
-}
-.doors-landing-cards .card-body {
-    background-color: #ffffff;
-}
-.doors-landing-cards a:hover img {
-    opacity: .75;
-}
-
-/* Child landing cards  */
-@media(max-width: 991px)  {
-    .doors-child-landing-cards .card .card-body h2, .doors-child-landing-cards .card .card-body h3 {
-        font-size: 2rem;
-    }
-}
-.doors-child-landing-cards .card {
-    background-color: var(--offWhite);
-    border-radius: 0;
-    transition: all .3s;
-}
-.doors-child-landing-cards .card .card-footer {
-    background-color: var(--offWhiteDark);
-    transition: all .3s;
-}
-.doors-child-landing-cards .card, .doors-child-landing-cards .card .card-body, .doors-child-landing-cards .card .card-header, .doors-child-landing-cards .card .card-footer {
-    border: none;
-    border-radius: 0;
-}
-.doors-child-landing-cards .card .card-body h2 {
-    font-weight: 500;
-}
-.doors-child-landing-cards .card .card-body h2, .doors-child-landing-cards .card .card-body h3 {
-    color: var(--black);
-} 
-.doors-child-landing-cards .card .card-body h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.doors-child-landing-cards .card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding: 3rem;
-}
-.doors-child-landing-cards .card .card-body .sub-title {
-    color: var(--gold);
-}
-
-.doors-child-landing-cards a {
-    color: var(--black);
-    text-decoration: none;
-}
-
-.doors-child-landing-cards .card .card-footer p span {
-    color: var(--goldDarker);
-}
-
-.doors-child-landing-cards .card .card-footer p {
-    font-size: 1rem;
-}
-.doors-child-landing-cards a.card:hover, .doors-child-landing-cards .card-header:hover, .doors-child-landing-cards .card-footer:hover, .doors-child-landing-cards .card-body:hover {
-    cursor: pointer;
-}
-.doors-child-landing-cards .card-header {
-    background-color: #ffffff;
-}
-.doors-child-landing-cards a:hover, .doors-child-landing-cards a:hover .card-footer {
-    background-color: var(--black);
-}
-.doors-child-landing-cards a.card:hover h2, .doors-child-landing-cards a.card:hover h3, .doors-child-landing-cards a.card:hover p {
-    color: var(--gold);
-}
-.doors-child-landing-cards a.card:hover img {
-    opacity: .75;
-}
 
 /*--------------------------------------------------------------
 # Pagination
 --------------------------------------------------------------*/
-.paging .page-number .btn-pager {
-    background-color: var(--black);
-    border-radius: 0;
-}
-.paging .page-number .btn-pager {
-    color: var(--gold);
-    border: 2px solid var(--black);
-}
-.paging .page-number .btn-pager.active {
-    color: #ffffff;
-}
-.paging .page-number .btn-pager:hover:not(.paging .page-number .btn-pager.active) {
-    background-color: var(--gold);
-    color: var(--black);
-    cursor: pointer;
-}
-/*--------------------------------------------------------------
-# Door 
---------------------------------------------------------------*/
-.door-info .door-heading {
-    background-color: var(--offWhite);
-}
 
-.door-info .door-img img {
-    width: auto;
-    height: 500px;
-    object-fit: cover;
-}
-.door-contact {
-    overflow: hidden;
-}
-.door-contact .container {
-    background-color: var(--offWhite);
-}
-.door-contact .card {
-    background-color: var(--black);
-}
-.door-contact .card svg {
-    height: 83px;
-}
-.door-contact .card .card-body h3 {
-    color: var(--gold);
-}
-.door-contact .card p {
-    color: #ffffff;
-    font-size: 1.75rem;
-}
 
 /*--------------------------------------------------------------
 # Footer
