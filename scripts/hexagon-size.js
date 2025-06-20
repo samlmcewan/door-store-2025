@@ -149,3 +149,22 @@ if (testimonialstext) {
     testimonialsHexagon3.style.height = `${newTestimonialsHeight3}px`;
   }
 }
+
+
+
+
+// Door Cards 1 
+
+const blackHexagons = document.querySelectorAll('.door-card-1-container .title');
+
+blackHexagons.forEach(h => {
+  const blackHexWidth = h.offsetWidth;
+  h.style.height = `${blackHexWidth}px`;
+})
+
+const blueHexagons = document.querySelectorAll('.door-card-1-container .foot');
+
+blueHexagons.forEach(h => {
+  const blueHexWidth = h.offsetWidth;
+  h.style.height = `${blueHexWidth}px`;
+})

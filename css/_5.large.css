@@ -30,7 +30,12 @@
 .guide .card {
     min-height: 19rem;
 }
-
+.door-cards-1 .title h2 {
+    font-size: 0.9rem;
+}
+.door-cards-1 .foot p {
+    font-size: 0.7rem;
+}
 /* Footer - Large Devices */
 
 .shfooter .collapse {

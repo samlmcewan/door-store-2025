@@ -10,7 +10,7 @@ body {
   font-style: normal;
 }
 h1, h2, h3, h4 {
-    font-weight: 600;
+    font-weight: 400;
 }
 p {
     font-size: 1.125rem;
@@ -699,11 +699,144 @@ p {
     text-transform: uppercase;
 }
 
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs .container-fluid {
+    background-color: var(--blue);
+}
+.breadcrumb-item a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.breadcrumb-item.active {
+    font-weight: 300;
+    color: #ffffff;
+}
+
 
 /*--------------------------------------------------------------
 # Inner Header
 --------------------------------------------------------------*/
+.inner-header-1 {
+    background-color: var(--black);
+}
+.inner-header-1 h1 {
+    color: var(--blue-light);
+    margin-bottom: 2rem;
+}
+.inner-header-1 p {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.inner-header-1 p:last-of-type {
+    margin-bottom: 0;
+}
+.inner-header-1-img {
+    width: 100%;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+/*--------------------------------------------------------------
+# Door Cards 1
+--------------------------------------------------------------*/
+.door-cards-1 {
+    padding: 4rem 0;
+    background-color: var(--grayLight);
 
+}
+.door-cards-1 a {
+    text-decoration: none;
+    color: var(--white);
+}
+.door-card-1-container {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+.door-cards-1 .title {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: var(--black);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.door-cards-1 .title h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.door-cards-1 .door-card-1-container img {
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.door-cards-1 .foot {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: var(--blue);
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.door-cards-1 .foot p {
+    text-align: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+}
+
+.door-cards-1 .sub {
+    text-transform: uppercase;
+    text-align: center;
+}
+.door-cards-1 .sub p {
+    font-size: 1.5rem;
+}
+
+a.door-card-1-container:hover .title {
+    background-color: var(--white);
+}
+a.door-card-1-container:hover .title h2 {
+    color: var(--black);
+}
+a.door-card-1-container:hover .foot {
+    background-color: var(--white);
+}
+a.door-card-1-container:hover p {
+    color: var(--black);
+}
+a.door-card-1-container .title {
+    transition: all .3s;
+}
+a.door-card-1-container .title h2 {
+    transition: all .3s;
+}
+a.door-card-1-container .foot {
+    transition: all .3s;
+}
+a.door-card-1-container p {
+    transition: all .3s;
+}
+.door-card-1-container .img-container img {
+    max-width: 368px;
+    max-height: 368px;
+}
 
 /*--------------------------------------------------------------
 # Pagination
@@ -715,10 +848,11 @@ p {
 --------------------------------------------------------------*/
 footer {
     font-size: 1rem;
+    background-color: var(--black);
 }
 
 #footer .social-logos a:hover svg g rect {
-    fill: var(--black)!important;
+    fill: var(--blue)!important;
 }
 
 footer#footer {
@@ -728,14 +862,14 @@ footer#footer {
         color: var(--cyan);
     }
 
-    footer .footer-title {
+    /* footer .footer-title {
         font-weight: 600;
-    }
+    } */
 
 
 
     footer a {
-        color: var(--black);
+        color: var(--white);
         font-size: .875rem;
         text-decoration: none;
         font-weight: 400;
@@ -743,19 +877,30 @@ footer#footer {
 
         footer a:hover {
             /* text-decoration: underline; */
-            color: var(--goldDarker);
+            color: var(--blue);
         }
 
             footer a:hover span {
-                color: var(--goldDarker);
+                color: var(--blue);
             }
-
-
+footer .fas.fa-angle-down path, footer .fas.fa-angle-right path {
+    fill: var(--blue);
+}
+.footer-title, footer a, footer p {
+    font-weight: 400;
+}
+footer p {
+    font-size: 0.875rem;
+}
+footer p, footer h4 {
+    color: var(--white);
+}
 .footer-title {
+    color: var(--blue-light);
     font-size: 1rem;
     /*font-weight: 500;*/
     margin-bottom: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 footer ul li {
@@ -780,7 +925,7 @@ footer .fa-chevron-right {
 }
 
 .shfooter i::before {
-    color: var(--light);
+    color: var(--grayLight);
 }
 
 
@@ -820,6 +965,11 @@ footer .fab:before {
     font-size: 1rem;
     margin-top: 2rem;
 }
+#footer .social-logos a svg {
+    height: 30px!important;
+    padding: 0!important;
+    margin-right: 1rem;
+}
 @keyframes icons-rise {
     from {
         transform: translateX(0px);
@@ -852,7 +1002,7 @@ footer .fab:before {
 
 footer hr:not([size]) {
     height: 1px;
-    color: var(--hcs-blue);
+    color: var(--blue);
     opacity: .8;
 }
 
@@ -899,6 +1049,12 @@ footer .fa-chevron-right {
 }
 
 .sub-footer {
-    background-color: var(--black);
-    color: var(--gold);
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 300;
+}
+
+footer .footer-text {
+    text-transform: uppercase;
+    color: var(--white);
 }

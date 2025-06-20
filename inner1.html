@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta data  -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>The Door Store</title>
+        <meta name="description" content="">
+        
+        <!-- CSS  -->
+        <link href='/css/_0.bootstrap.min.css' rel='stylesheet'>
+        <link href='/css/_0.swiper.bundle.css' rel='stylesheet'>
+        <link href='/css/_0.aos.css' rel='stylesheet'>
+        <link href='/css/_1.swiper.css' rel='stylesheet'>
+        <link href='/css/_2.variables.css' rel='stylesheet'>
+        <link href='/css/_3.default.css' rel='stylesheet'>
+        <link href='/css/_4.medium.css' rel='stylesheet'>
+        <link href='/css/_5.large.css' rel='stylesheet'>
+        <link href='/css/_6.xl.css' rel='stylesheet'>
+        <link href='/css/_7.xs.css' rel='stylesheet'>
+        <!-- Fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+        <div class="d-flex flex-column">
+            <!-- Top Bar  -->
+            <div id="topBar" class="container-fluid collapse top-bar py-0 order-2 order-xl-1">
+                <div class="container py-3">
+                    <div class="row justify-content-between justify-content-md-end align-items-center">
+                        
+                        <!-- Search Bar  -->
+                        <div class="search-col col-12 col-md-6 col-lg-4 col-xl-3 px-0">
+                            <form action="/search/" method="get" id="search">
+                                <div class="form-group controls d-flex flex-row justify-content-between align-items-center ps-lg-5">
+                                    <input type="text" class="form-control" placeholder="SEARCH" name="query" />
+                                    <button class="btn search-btn">
+                                        <svg height="20" id="Layer_23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.98 9.98"><g id="Layer_1-23"><path d="M3.38,5.3L.07,8.61c-.17.17-.02.59.33.95l.02.02c.35.35.78.5.95.33l3.31-3.31c-.53-.32-.98-.77-1.3-1.3" style="fill:#fff; stroke-width:0px;"/><path d="M6.67,0c-1.83,0-3.31,1.48-3.31,3.31s1.48,3.31,3.31,3.31,3.31-1.48,3.31-3.31-1.48-3.31-3.31-3.31M6.67,6.07c-1.52,0-2.77-1.24-2.77-2.77S5.15.54,6.67.54s2.77,1.24,2.77,2.76-1.24,2.77-2.77,2.77Z" style="fill:#fff; stroke-width:0px;"/></g></svg>
+                                        <!-- Hover svg  -->
+                                        <svg height="20" id="Layer_24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.98 9.98"><g id="Layer_1-24"><path d="M3.38,5.3L.07,8.61c-.17.17-.02.59.33.95l.02.02c.35.35.78.5.95.33l3.31-3.31c-.53-.32-.98-.77-1.3-1.3" style="fill:#ffc212; stroke-width:0px;"/><path d="M6.67,0c-1.83,0-3.31,1.48-3.31,3.31s1.48,3.31,3.31,3.31,3.31-1.48,3.31-3.31-1.48-3.31-3.31-3.31M6.67,6.07c-1.52,0-2.77-1.24-2.77-2.77S5.15.54,6.67.54s2.77,1.24,2.77,2.76-1.24,2.77-2.77,2.77Z" style="fill:#ffc212; stroke-width:0px;"/></g></svg>
+                                    </button>
+                                </div> 
+                            </form>
+                        </div>
+                        <!-- End Search Bar  -->
+                         <!-- Contact Header Desktop  -->
+                        <div class="col-12 col-xl-4 d-flex align-items-center justify-content-lg-end ps-0 d-none d-xl-flex ms-5 contact-col">
+                            <div class="contact-header">
+                                <div class="contact-container">
+                                    <svg class="phone-svg" id="uuid-c77a92ce-78c3-4f0f-95c6-f3579a918a3f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.23 43.84"><g id="uuid-5abd2c5d-73d1-4367-8c9d-137db083fe2a"><polyline points="41.55 0 55.23 21.78 41.55 43.84 13.67 43.84 0 22 13.67 0 41.55 0" style="fill:#008aae; fill-rule:evenodd;"/><path d="M33.95,36.34h-12.62c-1.16,0-2.1-.94-2.1-2.1V8.99c0-1.16.94-2.1,2.1-2.1h12.62c1.16,0,2.1.95,2.1,2.1v25.25c0,1.16-.94,2.1-2.1,2.1M21.32,7.94c-.58,0-1.05.47-1.05,1.05v25.25c0,.58.47,1.05,1.05,1.05h12.62c.58,0,1.05-.47,1.05-1.05V8.99c0-.58-.47-1.05-1.05-1.05h-12.62Z" style="fill:#fff;"/><path d="M28.69,10.04h-2.1c-.29,0-.53-.23-.53-.53s.24-.53.53-.53h2.1c.29,0,.53.24.53.53s-.23.53-.53.53" style="fill:#fff;"/><path d="M31.05,10.04h-.53c-.29,0-.53-.23-.53-.53s.24-.53.53-.53h.53c.29,0,.53.24.53.53s-.24.53-.53.53" style="fill:#fff;"/><path d="M35.53,33.18h-15.78c-.29,0-.53-.24-.53-.53s.24-.53.53-.53h15.78c.29,0,.53.24.53.53s-.24.53-.53.53" style="fill:#fff;"/></g></svg>
+                                    <a class="phone" href="tel:01418892220">0141 889 2220</a>
+                                    <!-- !!! update with real email !!!  -->
+                                    <a class="email" href="mailto:example@example.com">Email us</a>
+                                    <svg class="triangle-svg" id="uuid-dbbbc9c2-10c9-4e17-a8a7-61befde85024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.13 43.84"><g id="uuid-a9c66d81-3d5e-4547-93cf-013d6a887c01"><polyline points="5.45 0 19.13 21.78 5.45 43.84 .23 43.79 0 .03 5.45 0" style="fill-rule:evenodd;"/></g></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Contact Header Desktop  -->
+                    </div>
+                </div>
+            
+            </div>
+            <!-- End Top Bar -->
+
+            <!-- Main Navigation  -->
+            <div class="container-fluid nav-outer p-0 py-3 pt-xl-0 order-1 order-xl-2">
+                <div class="container">
+                    <nav class="navbar navbar-expand-xl navbar-dark py-0 " id="main-nav" aria-label="Main Navigation" role="navigation">
+
+                        <!-- Burger Collapse Button -->
+                        <div class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="animated-icon">
+                                <span></span><span></span><span></span>   
+                            </div>
+                        </div>
+                        <!-- End Burger Collapse Button -->
+
+                        <!-- Logo -->
+                        <div class="site-logo-top ps-lg-0">
+                            <a class="d-flex flex-row align-items-center" href="/" aria-label="Home">
+                                <svg width="230" id="uuid-2eabaf45-da08-4fd0-af8d-45bcfc6219be" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 446.58 112.16"><defs><clipPath id="uuid-8e16606b-68b9-46dd-95e7-130dabc401ae"><rect width="132.63" height="112.16" style="fill:none;"/></clipPath></defs><g id="uuid-2008a6ba-bcd2-4a5f-8a23-762aa0a3c23f"><g style="clip-path:url(#uuid-8e16606b-68b9-46dd-95e7-130dabc401ae);"><polyline points="122.4 79.11 122.4 26.37 80.98 0 35.31 26.37 35.31 79.11 80.98 105.47 122.4 79.11" style="fill:#231f20;"/><polyline points="85.73 11.31 38.26 11.31 14.52 52.42 38.26 93.54 85.73 93.54 109.47 52.42 85.73 11.31" style="fill:#008aae;"/><polyline points="41.29 29.38 56.75 34.61 59.44 33.7 59.44 33.69 61.14 33.11 38.86 25.59 38.86 40.64 41.29 39.82 41.29 29.38" style="fill:#fff;"/><polyline points="61.14 69.77 59.44 70.32 59.44 69.22 56.82 68.37 41.72 73.42 41.72 63.49 38.86 62.56 38.86 77.28 61.14 69.92 61.14 69.77 61.14 69.77" style="fill:#fff;"/><polyline points="41.72 60.39 41.29 60.24 41.29 39.82 38.86 40.64 38.86 62.56 41.72 63.49 41.72 60.39" style="fill:#fff;"/><polyline points="56.82 68.37 59.44 69.22 59.44 67.49 56.82 68.37" style="fill:#fff;"/><polyline points="59.01 36.77 59.44 36.63 59.44 33.7 56.75 34.6 59.01 35.37 59.01 36.77" style="fill:#fff;"/><polyline points="61.14 69.77 61.14 69.77 61.14 69.77 61.14 69.77" style="fill:#fff;"/><polyline points="59.01 36.77 59.01 35.37 56.75 34.6 41.29 39.82 41.29 60.24 41.72 60.39 41.72 42.62 59.01 36.77" style="fill:#fff;"/><polyline points="61.14 33.11 62.83 33.69 62.83 33.7 65.52 34.61 80.98 29.38 80.98 39.82 83.41 40.64 83.41 25.59 61.14 33.11" style="fill:#fff;"/><polyline points="59.44 33.7 60.02 33.5 62.17 36.18 62.25 33.5 62.83 33.7 62.83 33.68 61.14 33.11 59.44 33.68 59.44 33.7" style="fill:#fff;"/><polyline points="59.44 70.32 61.14 69.77 59.44 69.22 59.44 70.32" style="fill:#fff;"/><polyline points="62.17 36.18 60.02 33.5 59.44 33.7 59.44 69.22 61.14 69.77 61.14 69.77 62.17 36.18" style="fill:#fff;"/><polyline points="80.55 73.42 65.64 68.43 62.83 69.36 62.83 70.32 61.37 69.84 61.14 69.92 83.41 77.28 83.41 62.56 80.55 63.51 80.55 73.42" style="fill:#fff;"/><polyline points="62.83 70.32 62.83 69.36 61.37 69.84 62.83 70.32" style="fill:#fff;"/><polyline points="61.14 69.77 61.14 69.92 61.37 69.84 61.14 69.77" style="fill:#fff;"/><polyline points="80.55 63.51 83.41 62.56 80.55 63.49 80.55 63.51" style="fill:#fff;"/><polyline points="62.83 69.22 62.83 69.36 65.64 68.43 65.46 68.37 62.83 69.22" style="fill:#fff;"/><polyline points="61.14 69.77 61.14 69.77 61.37 69.84 62.83 69.36 62.83 69.22 61.14 69.77" style="fill:#fff;"/><polyline points="80.98 59.55 83.41 62.56 83.41 40.64 80.98 39.82 80.98 59.55" style="fill:#fff;"/><polyline points="63.26 36.77 63.26 35.37 65.52 34.6 62.83 33.7 62.83 36.63 63.26 36.77" style="fill:#fff;"/><polyline points="62.17 36.18 62.83 37 62.83 33.7 62.25 33.5 62.17 36.18" style="fill:#fff;"/><polyline points="80.98 60.25 80.55 60.39 80.55 63.49 83.41 62.56 80.98 59.55 80.98 60.25" style="fill:#fff;"/><polyline points="65.46 68.37 62.83 67.49 62.83 69.22 65.46 68.37" style="fill:#fff;"/><polyline points="62.83 69.22 62.83 37 62.17 36.18 61.14 69.77 62.83 69.22" style="fill:#fff;"/><path d="M63.26,36.77l17.29,5.85v16.4l.43.53v-19.72l-2.13-.72v.72c0,.37-.3.68-.68.68s-.68-.3-.68-.68v-1.18l-6.11-2.06-2.34.69c-.36.11-.73-.1-.84-.46-.11-.36.1-.73.46-.84l.49-.15-3.64-1.23-2.26.77v1.4" style="fill:#fff;"/><polyline points="80.55 60.39 80.98 60.24 80.98 59.55 80.55 59.02 80.55 60.39" style="fill:#fff;"/><path d="M78.17,55.41c-.15,0-.29.05-.41.14l1.08,1.35v-.81c0-.37-.3-.68-.68-.68" style="fill:#fff;"/><path d="M77.49,56.09v3.4c0,.37.3.68.68.68s.68-.3.68-.68v-2.6l-1.08-1.35c-.16.12-.27.32-.27.54" style="fill:#fff;"/><path d="M50.33,41.5l-7.28,2.37v8.84l7.28-2.41v-8.81M48.98,49.32l-4.57,1.51v-5.99l4.57-1.49v5.96Z" style="fill:#fff;"/><path d="M58.26,38.89l-7.28,2.37v8.84l7.28-2.41v-8.81M56.91,46.72l-4.57,1.51v-5.99l4.57-1.49v5.96Z" style="fill:#fff;"/><polyline points="43.05 62.23 45.14 61.53 43.05 60.83 43.05 62.23" style="fill:#fff;"/><path d="M50.33,51.01l-7.28,2.37v7.45l2.09.7,5.19-1.72v-8.8M48.98,58.84l-4.57,1.51v-5.99l4.57-1.49v5.96Z" style="fill:#fff;"/><path d="M58.26,48.41l-7.28,2.37v8.84l7.28-2.41v-8.81M56.91,56.23l-4.57,1.51v-5.99l4.57-1.49v5.96Z" style="fill:#fff;"/><polyline points="69.16 35.83 71.39 36.58 77.49 34.78 77.49 38.65 78.85 39.1 78.85 32.97 69.16 35.83" style="fill:#fff;"/><path d="M68.67,35.98c-.36.11-.56.48-.46.84.11.36.48.56.84.46l2.34-.69-2.23-.75-.49.15" style="fill:#fff;"/><path d="M77.49,39.83c0,.37.3.68.68.68s.68-.3.68-.68v-.72l-1.35-.46v1.18" style="fill:#fff;"/></g><path d="M144.3,68.5v-24.91h-7.99v-3.03h19.4v3.03h-8.3v24.91h-3.11Z" style="fill:#231f20;"/><path d="M159.79,68.5v-29.54h2.99v13.26l-.6.6c.29-1.09.84-2.06,1.64-2.89.8-.84,1.74-1.5,2.81-1.98,1.08-.48,2.18-.72,3.29-.72,1.6,0,2.93.31,3.99.92,1.06.61,1.86,1.56,2.38,2.83.52,1.28.78,2.9.78,4.87v12.66h-3.03v-12.5c0-1.38-.18-2.52-.54-3.41-.36-.89-.91-1.55-1.66-1.98-.75-.43-1.68-.62-2.79-.6-.88,0-1.7.15-2.48.46-.77.31-1.44.73-2,1.26-.56.53-1,1.15-1.32,1.84-.32.69-.48,1.44-.48,2.24v12.7h-2.99Z" style="fill:#231f20;"/><path d="M191.97,68.9c-2.08,0-3.92-.45-5.53-1.36-1.61-.9-2.87-2.17-3.77-3.79-.91-1.62-1.36-3.49-1.36-5.59,0-1.62.25-3.09.76-4.41.51-1.32,1.22-2.47,2.14-3.45.92-.98,2.02-1.75,3.29-2.3,1.28-.55,2.66-.82,4.15-.82,1.41,0,2.69.25,3.85.76,1.16.51,2.16,1.2,2.99,2.1.84.89,1.47,1.95,1.9,3.17.43,1.22.61,2.57.56,4.03l-.04,1.4h-17.37l-.44-2.52h15.53l-.72.68v-.96c-.05-.96-.33-1.88-.84-2.77-.51-.89-1.22-1.62-2.14-2.18-.92-.56-2.02-.84-3.29-.84-1.49,0-2.78.3-3.87.9-1.09.6-1.93,1.48-2.52,2.65-.59,1.17-.88,2.62-.88,4.35s.32,3.08.96,4.29c.64,1.21,1.55,2.15,2.73,2.81,1.18.67,2.62,1,4.29,1,.98,0,1.96-.17,2.93-.5.97-.33,2.04-.99,3.21-1.98l1.56,2.16c-.61.61-1.34,1.15-2.2,1.62-.85.47-1.78.84-2.79,1.12-1.01.28-2.05.42-3.11.42Z" style="fill:#231f20;"/><path d="M217.12,68.5v-27.95h11.46c2.05,0,3.91.34,5.57,1.02,1.66.68,3.1,1.64,4.31,2.88,1.21,1.24,2.14,2.71,2.77,4.41.64,1.7.96,3.59.96,5.67s-.32,3.93-.96,5.65-1.56,3.19-2.75,4.43c-1.2,1.24-2.64,2.2-4.31,2.87s-3.54,1.02-5.59,1.02h-11.46ZM223.11,64.15l-.64-1.04h5.91c1.2,0,2.28-.21,3.23-.62.96-.41,1.78-.98,2.46-1.72.68-.73,1.19-1.63,1.54-2.7.35-1.06.52-2.25.52-3.55s-.17-2.48-.52-3.53c-.35-1.05-.86-1.95-1.54-2.7-.68-.74-1.5-1.32-2.46-1.74-.96-.41-2.04-.62-3.23-.62h-6.03l.76-.96v19.16Z" style="fill:#231f20;"/><path d="M260,68.9c-2.05,0-3.94-.36-5.67-1.08-1.73-.72-3.24-1.72-4.53-3.01-1.29-1.29-2.28-2.82-2.97-4.59-.69-1.77-1.04-3.69-1.04-5.77s.35-4.03,1.04-5.77c.69-1.74,1.68-3.27,2.97-4.57s2.8-2.32,4.53-3.03c1.73-.72,3.62-1.08,5.67-1.08s3.97.36,5.69,1.08,3.22,1.73,4.51,3.03c1.29,1.3,2.28,2.83,2.97,4.59.69,1.76,1.04,3.67,1.04,5.75s-.35,3.99-1.04,5.75c-.69,1.76-1.68,3.29-2.97,4.59-1.29,1.3-2.79,2.32-4.51,3.03s-3.61,1.08-5.69,1.08ZM260,63.23c1.17,0,2.26-.21,3.25-.64,1-.43,1.86-1.04,2.58-1.84s1.28-1.73,1.7-2.79c.41-1.06.62-2.24.62-3.51s-.21-2.45-.62-3.51c-.41-1.06-.98-1.99-1.7-2.77-.72-.78-1.58-1.4-2.58-1.84-1-.44-2.08-.66-3.25-.66s-2.25.22-3.23.66c-.99.44-1.85,1.05-2.6,1.84-.75.79-1.31,1.71-1.7,2.77-.39,1.06-.58,2.24-.58,3.51s.19,2.45.58,3.51c.39,1.06.95,2,1.7,2.79.74.8,1.61,1.41,2.6,1.84.98.43,2.06.64,3.23.64Z" style="fill:#231f20;"/><path d="M292.02,68.9c-2.05,0-3.94-.36-5.67-1.08-1.73-.72-3.24-1.72-4.53-3.01-1.29-1.29-2.28-2.82-2.97-4.59-.69-1.77-1.04-3.69-1.04-5.77s.35-4.03,1.04-5.77c.69-1.74,1.68-3.27,2.97-4.57s2.8-2.32,4.53-3.03c1.73-.72,3.62-1.08,5.67-1.08s3.97.36,5.69,1.08,3.22,1.73,4.51,3.03c1.29,1.3,2.28,2.83,2.97,4.59.69,1.76,1.04,3.67,1.04,5.75s-.35,3.99-1.04,5.75c-.69,1.76-1.68,3.29-2.97,4.59-1.29,1.3-2.79,2.32-4.51,3.03s-3.61,1.08-5.69,1.08ZM292.02,63.23c1.17,0,2.26-.21,3.25-.64,1-.43,1.86-1.04,2.58-1.84s1.28-1.73,1.7-2.79c.41-1.06.62-2.24.62-3.51s-.21-2.45-.62-3.51c-.41-1.06-.98-1.99-1.7-2.77-.72-.78-1.58-1.4-2.58-1.84-1-.44-2.08-.66-3.25-.66s-2.25.22-3.23.66c-.99.44-1.85,1.05-2.6,1.84-.75.79-1.31,1.71-1.7,2.77-.39,1.06-.58,2.24-.58,3.51s.19,2.45.58,3.51c.39,1.06.95,2,1.7,2.79.74.8,1.61,1.41,2.6,1.84.98.43,2.06.64,3.23.64Z" style="fill:#231f20;"/><path d="M311.66,68.5v-27.95h12.38c1.73,0,3.3.39,4.71,1.18,1.41.79,2.52,1.84,3.33,3.17.81,1.33,1.22,2.85,1.22,4.55s-.41,3.2-1.22,4.57c-.81,1.37-1.92,2.46-3.33,3.25-1.41.8-2.98,1.2-4.71,1.2h-6.59v10.02h-5.79ZM317.45,53.61h6.31c.72,0,1.35-.17,1.9-.5.54-.33.96-.8,1.26-1.4.29-.6.44-1.27.44-2.02,0-.8-.17-1.49-.52-2.08-.35-.58-.85-1.04-1.52-1.38-.67-.33-1.44-.5-2.32-.5h-5.55v7.87ZM327.52,68.5l-7.11-12.62,6.15-1,7.91,13.65-6.95-.04Z" style="fill:#231f20;"/><path d="M360.49,68.9c-1.41,0-2.74-.2-3.99-.6-1.25-.4-2.4-1-3.43-1.8-1.04-.8-1.96-1.78-2.75-2.95l2.16-2.4c1.25,1.78,2.54,3.03,3.85,3.75s2.8,1.08,4.45,1.08c1.2,0,2.29-.2,3.27-.6.98-.4,1.76-.96,2.32-1.68s.84-1.54.84-2.48c0-.61-.1-1.16-.3-1.64-.2-.48-.5-.9-.9-1.28-.4-.37-.89-.71-1.48-1-.59-.29-1.26-.56-2.02-.8-.76-.24-1.6-.48-2.54-.72-1.36-.32-2.55-.7-3.57-1.14-1.03-.44-1.89-.98-2.6-1.62-.71-.64-1.24-1.38-1.6-2.22-.36-.84-.54-1.83-.54-2.97s.23-2.1.7-3.03c.47-.93,1.11-1.74,1.94-2.42.82-.68,1.8-1.2,2.91-1.58,1.12-.37,2.32-.56,3.59-.56,1.44,0,2.72.19,3.85.58,1.13.39,2.14.95,3.01,1.7s1.64,1.64,2.28,2.67l-2.2,2.16c-.56-.88-1.19-1.64-1.9-2.28-.71-.64-1.48-1.12-2.32-1.46-.84-.33-1.76-.5-2.77-.5-1.17,0-2.2.2-3.09.6-.89.4-1.59.95-2.1,1.66-.51.71-.76,1.51-.76,2.42,0,.67.12,1.26.36,1.78.24.52.62.97,1.14,1.36.52.39,1.2.73,2.04,1.04.84.31,1.84.59,3.01.86,1.38.32,2.63.71,3.73,1.16,1.1.45,2.05.99,2.83,1.62.78.63,1.38,1.35,1.8,2.18.41.83.62,1.77.62,2.83,0,1.65-.41,3.09-1.24,4.33-.83,1.24-1.98,2.2-3.45,2.89-1.48.69-3.2,1.04-5.17,1.04Z" style="fill:#231f20;"/><path d="M373.55,50.53v-2.87h12.98v2.87h-12.98ZM378.26,68.5v-26.31h2.99v26.31h-2.99Z" style="fill:#231f20;"/><path d="M399.38,68.9c-2.08,0-3.92-.47-5.53-1.4-1.61-.93-2.88-2.22-3.79-3.87-.92-1.65-1.38-3.53-1.38-5.63s.46-3.93,1.38-5.55c.92-1.62,2.18-2.9,3.79-3.83,1.61-.93,3.45-1.4,5.53-1.4s3.88.47,5.49,1.4c1.61.93,2.87,2.21,3.79,3.83.92,1.62,1.38,3.47,1.38,5.55s-.46,3.98-1.38,5.63c-.92,1.65-2.18,2.94-3.79,3.87-1.61.93-3.44,1.4-5.49,1.4ZM399.38,66.06c1.46,0,2.77-.35,3.91-1.06,1.14-.7,2.04-1.66,2.67-2.87.64-1.21.96-2.59.96-4.13s-.32-2.91-.96-4.11c-.64-1.2-1.53-2.14-2.67-2.81-1.15-.68-2.45-1.02-3.91-1.02s-2.77.34-3.93,1.02c-1.16.68-2.06,1.62-2.71,2.83-.65,1.21-.96,2.58-.94,4.09-.03,1.54.29,2.92.94,4.13.65,1.21,1.56,2.17,2.71,2.87,1.16.71,2.47,1.06,3.93,1.06Z" style="fill:#231f20;"/><path d="M414.35,68.5v-20.84h2.99l.08,5.55-.32-.76c.29-.93.76-1.8,1.42-2.6.65-.8,1.43-1.44,2.34-1.92.9-.48,1.9-.72,2.99-.72.45,0,.88.03,1.28.1.4.07.73.15,1,.26l-.84,3.35c-.35-.16-.7-.27-1.06-.34-.36-.07-.7-.1-1.02-.1-.91,0-1.72.16-2.44.48s-1.33.77-1.84,1.34c-.51.57-.89,1.23-1.16,1.98-.27.75-.4,1.54-.4,2.4v11.82h-3.03Z" style="fill:#231f20;"/><path d="M437.59,68.9c-2.08,0-3.92-.45-5.53-1.36-1.61-.9-2.87-2.17-3.77-3.79-.91-1.62-1.36-3.49-1.36-5.59,0-1.62.25-3.09.76-4.41.51-1.32,1.22-2.47,2.14-3.45.92-.98,2.02-1.75,3.29-2.3,1.28-.55,2.66-.82,4.15-.82,1.41,0,2.69.25,3.85.76,1.16.51,2.16,1.2,2.99,2.1.84.89,1.47,1.95,1.9,3.17.43,1.22.61,2.57.56,4.03l-.04,1.4h-17.37l-.44-2.52h15.53l-.72.68v-.96c-.05-.96-.33-1.88-.84-2.77-.51-.89-1.22-1.62-2.14-2.18-.92-.56-2.02-.84-3.29-.84-1.49,0-2.78.3-3.87.9-1.09.6-1.93,1.48-2.52,2.65-.59,1.17-.88,2.62-.88,4.35s.32,3.08.96,4.29c.64,1.21,1.55,2.15,2.73,2.81,1.18.67,2.62,1,4.29,1,.98,0,1.96-.17,2.93-.5.97-.33,2.04-.99,3.21-1.98l1.56,2.16c-.61.61-1.34,1.15-2.2,1.62-.85.47-1.78.84-2.79,1.12-1.01.28-2.05.42-3.11.42Z" style="fill:#231f20;"/></g></svg>
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+
+                        <div class="d-flex flex-row">
+                            <!-- Mobile Search button  -->
+                            <div class="mobile-search-btn" role="button" data-bs-toggle="collapse" data-bs-target="#topBar">
+                                <svg height="28" id="Layer_26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.98 9.98"><g id="Layer_1-26"><path d="M3.38,5.3L.07,8.61c-.17.17-.02.59.33.95l.02.02c.35.35.78.5.95.33l3.31-3.31c-.53-.32-.98-.77-1.3-1.3" style="fill:#000; stroke-width:0px;"/><path d="M6.67,0c-1.83,0-3.31,1.48-3.31,3.31s1.48,3.31,3.31,3.31,3.31-1.48,3.31-3.31-1.48-3.31-3.31-3.31M6.67,6.07c-1.52,0-2.77-1.24-2.77-2.77S5.15.54,6.67.54s2.77,1.24,2.77,2.76-1.24,2.77-2.77,2.77Z" style="fill:#000; stroke-width:0px;"/></g></svg>
+                                <div class="icon">
+                                    <span></span><span></span>   
+                                </div>
+                            </div>
+                            <!-- End Mobile Search button  -->
+                         
+                        </div>
+
+                        <!-- Nav Links  -->
+                        <div class="collapse navbar-collapse justify-content-xl-end" id="navbarSupportedContent">
+                            <div class="d-flex pt-4 pt-lg-0">
+                                <ul class="navbar-nav w-100 pt-2 pb-0 pt-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link scrollto" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#">Doors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#">Handles</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#">Media Walls</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#">FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#">Contact Us</a>
+                                    </li>
+                                
+                                </ul>
+
+                            </div>
+                            <!-- Contact Header Mobile 2 -->
+                            <div class="container-fluid d-xl-none">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 d-flex align-items-center justify-content-center justify-content-lg-end ps-0 d-flex ms-xl-5 contact-col2">
+                                        <div class="contact-header2">
+                                            <div class="contact-container2">
+                                                <svg class="phone-svg" id="uuid-c77a92ce-78c3-4f0f-95c6-f3579a918a3f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.23 43.84"><g id="uuid-5abd2c5d-73d1-4367-8c9d-137db083fe2a"><polyline points="41.55 0 55.23 21.78 41.55 43.84 13.67 43.84 0 22 13.67 0 41.55 0" style="fill:#008aae; fill-rule:evenodd;"/><path d="M33.95,36.34h-12.62c-1.16,0-2.1-.94-2.1-2.1V8.99c0-1.16.94-2.1,2.1-2.1h12.62c1.16,0,2.1.95,2.1,2.1v25.25c0,1.16-.94,2.1-2.1,2.1M21.32,7.94c-.58,0-1.05.47-1.05,1.05v25.25c0,.58.47,1.05,1.05,1.05h12.62c.58,0,1.05-.47,1.05-1.05V8.99c0-.58-.47-1.05-1.05-1.05h-12.62Z" style="fill:#fff;"/><path d="M28.69,10.04h-2.1c-.29,0-.53-.23-.53-.53s.24-.53.53-.53h2.1c.29,0,.53.24.53.53s-.23.53-.53.53" style="fill:#fff;"/><path d="M31.05,10.04h-.53c-.29,0-.53-.23-.53-.53s.24-.53.53-.53h.53c.29,0,.53.24.53.53s-.24.53-.53.53" style="fill:#fff;"/><path d="M35.53,33.18h-15.78c-.29,0-.53-.24-.53-.53s.24-.53.53-.53h15.78c.29,0,.53.24.53.53s-.24.53-.53.53" style="fill:#fff;"/></g></svg>
+                                                <a class="phone" href="tel:01418892220">0141 889 2220</a>
+                                                <!-- !!! update with real email !!!  -->
+                                                <a class="email" href="mailto:example@example.com">Email us</a>
+                                                <svg class="triangle-svg" id="uuid-dbbbc9c2-10c9-4e17-a8a7-61befde85024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.13 43.84"><g id="uuid-a9c66d81-3d5e-4547-93cf-013d6a887c01"><polyline points="5.45 0 19.13 21.78 5.45 43.84 .23 43.79 0 .03 5.45 0" style="fill-rule:evenodd;"/></g></svg>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Contact Header Mobile 2 -->
+                            
+                        </div><!-- /.collapse  -->
+                  
+                    </nav>
+                </div>
+                
+            </div>  <!-- /.nav-outer -->
+         <!-- End Main Navigation  -->
+        </div>
+
+        <!-- Breadcrumbs  -->
+        <section class="breadcrumbs">
+            <div class="container-fluid py-4">
+                <div class="container">
+                    <div class="row">
+                        <div id="breadcrumb" aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item d-flex align-items-center"><a href="/">Home</a></li>    
+                                <li class="breadcrumb-item active">Our Doors</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcrumbs  -->
+
+        <!-- Inner Header 1  -->
+         <section class="inner-header-1 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-md-center">
+                        <div>
+                            <h1>Our doors</h1>
+                            <p>
+                                Toj fise rnvisd viesnv dsivhs ifvnam snfeiuhbv fd
+                                nvjn vieyf dkjfsdfdkf dfdks fdjf dfvn; xioh k djfi
+                                sernv isd vies nvds iv.
+                            </p> 
+                            <p>Toj fise rnvisd viesnv dsivhs ifvnam snfeiuhbv fd
+                                nvjn vieyf dkjfsdfdkf dfdks fdjf dfvn; xioh k djfi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-5 me-xl-auto d-flex align-items-md-center pt-5 pt-md-0">
+                        <img class="inner-header-1-img" src="/images/inner1_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- End Inner Header 1  -->
+
+        <!-- Door Cards 1  -->
+         <section class="door-cards-1">
+            
+            <div class="container py-5">
+                <div class="gray-hex d-none d-xl-block"></div>
+                <div class="row py-5 g-5">
+
+                    <!-- Door Card 1 -->
+                    <div class="col-md-4 door-card-col">
+                        <a href="#" class="door-card-1-container">
+                            <div class="title">
+                                <h2>
+                                    NEVER PAINT AGAIN DOORS
+                                </h2>
+                            </div>
+                            <div class="img-container p-3">
+                                <img src="/images/dc1.png" alt="">
+                            </div>
+                            <div class="foot">
+                                <p>View range</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Door Card 1 -->
+                     
+                    <!-- Door Card 1 -->
+                    <div class="col-md-4 door-card-col">
+                        <a href="#" class="door-card-1-container">
+                            <div class="title">
+                                <h2>
+                                    French doors
+                                </h2>
+                            </div>
+                            <div class="img-container p-3">
+                                <img src="/images/dc2.png" alt="">
+                            </div>
+                            <div class="foot">
+                                <p>View range</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Door Card 1 -->
+                     
+                    <!-- Door Card 1 -->
+                    <div class="col-md-4 door-card-col">
+                        <a href="#" class="door-card-1-container">
+                            <div class="title">
+                                <h2>
+                                    UPC front doors
+                                </h2>
+                            </div>
+                            <div class="img-container p-3">
+                                <img src="/images/dc3.png" alt="">
+                            </div>
+                            <div class="foot">
+                                <p>View range</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Door Card 1 -->
+                     
+                    <!-- Door Card 1 -->
+                    <div class="col-md-4 door-card-col">
+                        <a href="#" class="door-card-1-container">
+                            <div class="title">
+                                <h2>
+                                    Composite doors
+                                </h2>
+                            </div>
+                            <div class="img-container p-3">
+                                <img src="/images/dc4.png" alt="">
+                            </div>
+                            <div class="foot">
+                                <p>View range</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Door Card 1 -->
+                     
+                    <!-- Door Card 1 -->
+                    <div class="col-md-4 door-card-col">
+                        <a href="#" class="door-card-1-container">
+                            <div class="title">
+                                <h2>
+                                    UPC Back doors
+                                </h2>
+                            </div>
+                            <div class="img-container p-3">
+                                <img src="/images/dc5.png" alt="">
+                            </div>
+                            <div class="foot">
+                                <p>View range</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Door Card 1 -->
+                     
+                    <!-- Door Card 1 -->
+                    <div class="col-md-4 door-card-col">
+                        <a href="#" class="door-card-1-container">
+                            <div class="title">
+                                <h2>
+                                    Oak doors
+                                </h2>
+                            </div>
+                            <div class="img-container p-3">
+                                <img src="/images/dc6.png" alt="">
+                            </div>
+                            <div class="foot">
+                                <p>View range</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Door Card 1 -->
+                     
+                </div>
+                <div class="row sub">
+                    <div class="col-12">
+                        <p>SUPPLYING AND FITTING DOORS THROUGHOUT SCOTLAND AND THE NORTH OF ENGLAnd</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- End Door Cards 1  -->
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="testimonials-hexagon-2 d-none"></div>
+                        
+                        <div class="col-12 col-md-6 p-0">
+                            <div class="testimonials-header">
+                                <h2>customer <br> <span>testimonials</span></h2>
+                            </div>
+                            <div class="testimonials-text-container pb-0 ps-md-0">
+                                <div class="testimonials-hexagon-blue d-none "></div>
+                                <div class="testimonials-text">
+                                    <p>PURCHASED: FRONT DOOR</p>
+                                    <p>From start to finish we can't complain we love the
+                                        new front door we bought and we were told by
+                                        John the joiner would be with us at 10.30am he
+                                        turned up at 10am and my husband said he was
+                                        so pleasant. I would recommend this company in
+                                        a minute which I already have done.</p>
+                                        <p>PAULA McHugh</p>
+                                        <a href="#" class="btn btn-white-outline mt-3 d-none d-xl-block mt-5 ">Read all testminonials</a>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-md-6 swiper swiper3 mb-5">
+                            <div class="testimonials-hexagon testimonials-hexagon-testimonials-black "></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonials-img-container">
+                                        <img class="testimonials-img" src="images/testimonials1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-white-outline mt-3 d-xl-none">Read all testminonials</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid  -->
+        </section>
+        <!-- End Testimonials -->
+
+        <!-- Footer -->
+        <footer id="footer" class="d-flex-column pt-2 pt-md-4 pt-lg-5">
+            <!-- Footer Links -->
+            <div class="container text-left">
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 mb-lg-5 footer-logo my-3 mt-md-2">
+                    <svg width="230" id="uuid-572c7806-c1e9-40b6-96fe-7c0abd957c9b" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 446.58 112.16"><defs><clipPath id="uuid-b25a11f3-2a69-4166-bdcd-937a8e56084f"><rect width="132.63" height="112.16" style="fill:none;"/></clipPath></defs><g id="uuid-101cf04c-28fc-431f-b1e4-f14566577472"><g id="uuid-217cf10f-a8f0-429c-aec0-d0f5c0548bc1"><g style="clip-path:url(#uuid-b25a11f3-2a69-4166-bdcd-937a8e56084f);"><polyline points="122.4 79.11 122.4 26.37 80.98 0 35.31 26.37 35.31 79.11 80.98 105.47 122.4 79.11" style="fill:#fff;"/><polyline points="85.73 11.31 38.26 11.31 14.52 52.42 38.26 93.54 85.73 93.54 109.47 52.42 85.73 11.31" style="fill:#008aae;"/><polyline points="41.29 29.38 56.75 34.61 59.44 33.7 59.44 33.69 61.14 33.11 38.86 25.59 38.86 40.64 41.29 39.82 41.29 29.38" style="fill:#fff;"/><polyline points="61.14 69.77 59.44 70.32 59.44 69.22 56.82 68.37 41.72 73.42 41.72 63.49 38.86 62.56 38.86 77.28 61.14 69.92 61.14 69.77 61.14 69.77" style="fill:#fff;"/><polyline points="41.72 60.39 41.29 60.24 41.29 39.82 38.86 40.64 38.86 62.56 41.72 63.49 41.72 60.39" style="fill:#fff;"/><polyline points="56.82 68.37 59.44 69.22 59.44 67.49 56.82 68.37" style="fill:#fff;"/><polyline points="59.01 36.77 59.44 36.63 59.44 33.7 56.75 34.6 59.01 35.37 59.01 36.77" style="fill:#fff;"/><polyline points="59.01 36.77 59.01 35.37 56.75 34.6 41.29 39.82 41.29 60.24 41.72 60.39 41.72 42.62 59.01 36.77" style="fill:#fff;"/><polyline points="61.14 33.11 62.83 33.69 62.83 33.7 65.52 34.61 80.98 29.38 80.98 39.82 83.41 40.64 83.41 25.59 61.14 33.11" style="fill:#fff;"/><polyline points="59.44 33.7 60.02 33.5 62.17 36.18 62.25 33.5 62.83 33.7 62.83 33.68 61.14 33.11 59.44 33.68 59.44 33.7" style="fill:#fff;"/><polyline points="59.44 70.32 61.14 69.77 59.44 69.22 59.44 70.32" style="fill:#fff;"/><polyline points="62.17 36.18 60.02 33.5 59.44 33.7 59.44 69.22 61.14 69.77 61.14 69.77 62.17 36.18" style="fill:#fff;"/><polyline points="80.55 73.42 65.64 68.43 62.83 69.36 62.83 70.32 61.37 69.84 61.14 69.92 83.41 77.28 83.41 62.56 80.55 63.51 80.55 73.42" style="fill:#fff;"/><polyline points="62.83 70.32 62.83 69.36 61.37 69.84 62.83 70.32" style="fill:#fff;"/><polyline points="61.14 69.77 61.14 69.92 61.37 69.84 61.14 69.77" style="fill:#fff;"/><polyline points="80.55 63.51 83.41 62.56 80.55 63.49 80.55 63.51" style="fill:#fff;"/><polyline points="62.83 69.22 62.83 69.36 65.64 68.43 65.46 68.37 62.83 69.22" style="fill:#fff;"/><polyline points="61.14 69.77 61.14 69.77 61.37 69.84 62.83 69.36 62.83 69.22 61.14 69.77" style="fill:#fff;"/><polyline points="80.98 59.55 83.41 62.56 83.41 40.64 80.98 39.82 80.98 59.55" style="fill:#fff;"/><polyline points="63.26 36.77 63.26 35.37 65.52 34.6 62.83 33.7 62.83 36.63 63.26 36.77" style="fill:#fff;"/><polyline points="62.17 36.18 62.83 37 62.83 33.7 62.25 33.5 62.17 36.18" style="fill:#fff;"/><polyline points="80.98 60.25 80.55 60.39 80.55 63.49 83.41 62.56 80.98 59.55 80.98 60.25" style="fill:#fff;"/><polyline points="65.46 68.37 62.83 67.49 62.83 69.22 65.46 68.37" style="fill:#fff;"/><polyline points="62.83 69.22 62.83 37 62.17 36.18 61.14 69.77 62.83 69.22" style="fill:#fff;"/><path d="M63.26,36.77l17.29,5.85v16.4l.43.53v-19.72l-2.13-.72v.72c0,.37-.3.68-.68.68s-.68-.3-.68-.68v-1.18l-6.11-2.06-2.34.69c-.36.11-.73-.1-.84-.46-.11-.36.1-.73.46-.84l.49-.15-3.64-1.23-2.26.77v1.4" style="fill:#fff;"/><polyline points="80.55 60.39 80.98 60.24 80.98 59.55 80.55 59.02 80.55 60.39" style="fill:#fff;"/><path d="M78.17,55.41c-.15,0-.29.05-.41.14l1.08,1.35v-.81c0-.37-.3-.68-.68-.68" style="fill:#fff;"/><path d="M77.49,56.09v3.4c0,.37.3.68.68.68s.68-.3.68-.68v-2.6l-1.08-1.35c-.16.12-.27.32-.27.54" style="fill:#fff;"/><path d="M50.33,41.5l-7.28,2.37v8.84l7.28-2.41v-8.81M48.98,49.32l-4.57,1.51v-5.99l4.57-1.49v5.96h0Z" style="fill:#fff;"/><path d="M58.26,38.89l-7.28,2.37v8.84l7.28-2.41v-8.81M56.91,46.72l-4.57,1.51v-5.99l4.57-1.49v5.96h0Z" style="fill:#fff;"/><polyline points="43.05 62.23 45.14 61.53 43.05 60.83 43.05 62.23" style="fill:#fff;"/><path d="M50.33,51.01l-7.28,2.37v7.45l2.09.7,5.19-1.72v-8.8M48.98,58.84l-4.57,1.51v-5.99l4.57-1.49v5.96h0Z" style="fill:#fff;"/><path d="M58.26,48.41l-7.28,2.37v8.84l7.28-2.41v-8.81M56.91,56.23l-4.57,1.51v-5.99l4.57-1.49v5.96h0Z" style="fill:#fff;"/><polyline points="69.16 35.83 71.39 36.58 77.49 34.78 77.49 38.65 78.85 39.1 78.85 32.97 69.16 35.83" style="fill:#fff;"/><path d="M68.67,35.98c-.36.11-.56.48-.46.84.11.36.48.56.84.46l2.34-.69-2.23-.75-.49.15" style="fill:#fff;"/><path d="M77.49,39.83c0,.37.3.68.68.68s.68-.3.68-.68v-.72l-1.35-.46v1.18" style="fill:#fff;"/></g><path d="M144.3,68.5v-24.91h-7.99v-3.03h19.4v3.03h-8.3v24.91h-3.11,0Z" style="fill:#fff;"/><path d="M159.79,68.5v-29.54h2.99v13.26l-.6.6c.29-1.09.84-2.06,1.64-2.89.8-.84,1.74-1.5,2.81-1.98,1.08-.48,2.18-.72,3.29-.72,1.6,0,2.93.31,3.99.92,1.06.61,1.86,1.56,2.38,2.83.52,1.28.78,2.9.78,4.87v12.66h-3.03v-12.5c0-1.38-.18-2.52-.54-3.41s-.91-1.55-1.66-1.98-1.68-.62-2.79-.6c-.88,0-1.7.15-2.48.46-.77.31-1.44.73-2,1.26s-1,1.15-1.32,1.84-.48,1.44-.48,2.24v12.7h-2.99v-.02Z" style="fill:#fff;"/><path d="M191.97,68.9c-2.08,0-3.92-.45-5.53-1.36-1.61-.9-2.87-2.17-3.77-3.79-.91-1.62-1.36-3.49-1.36-5.59,0-1.62.25-3.09.76-4.41s1.22-2.47,2.14-3.45,2.02-1.75,3.29-2.3c1.28-.55,2.66-.82,4.15-.82,1.41,0,2.69.25,3.85.76s2.16,1.2,2.99,2.1c.84.89,1.47,1.95,1.9,3.17s.61,2.57.56,4.03l-.04,1.4h-17.37l-.44-2.52h15.53l-.72.68v-.96c-.05-.96-.33-1.88-.84-2.77s-1.22-1.62-2.14-2.18-2.02-.84-3.29-.84c-1.49,0-2.78.3-3.87.9-1.09.6-1.93,1.48-2.52,2.65-.59,1.17-.88,2.62-.88,4.35s.32,3.08.96,4.29c.64,1.21,1.55,2.15,2.73,2.81,1.18.67,2.62,1,4.29,1,.98,0,1.96-.17,2.93-.5.97-.33,2.04-.99,3.21-1.98l1.56,2.16c-.61.61-1.34,1.15-2.2,1.62-.85.47-1.78.84-2.79,1.12-1.01.28-2.05.42-3.11.42h.02Z" style="fill:#fff;"/><path d="M217.12,68.5v-27.95h11.46c2.05,0,3.91.34,5.57,1.02s3.1,1.64,4.31,2.88c1.21,1.24,2.14,2.71,2.77,4.41.64,1.7.96,3.59.96,5.67s-.32,3.93-.96,5.65-1.56,3.19-2.75,4.43c-1.2,1.24-2.64,2.2-4.31,2.87s-3.54,1.02-5.59,1.02h-11.46ZM223.11,64.15l-.64-1.04h5.91c1.2,0,2.28-.21,3.23-.62.96-.41,1.78-.98,2.46-1.72.68-.73,1.19-1.63,1.54-2.7.35-1.06.52-2.25.52-3.55s-.17-2.48-.52-3.53-.86-1.95-1.54-2.7c-.68-.74-1.5-1.32-2.46-1.74-.96-.41-2.04-.62-3.23-.62h-6.03l.76-.96v19.18Z" style="fill:#fff;"/><path d="M260,68.9c-2.05,0-3.94-.36-5.67-1.08s-3.24-1.72-4.53-3.01-2.28-2.82-2.97-4.59-1.04-3.69-1.04-5.77.35-4.03,1.04-5.77c.69-1.74,1.68-3.27,2.97-4.57s2.8-2.32,4.53-3.03c1.73-.72,3.62-1.08,5.67-1.08s3.97.36,5.69,1.08,3.22,1.73,4.51,3.03,2.28,2.83,2.97,4.59c.69,1.76,1.04,3.67,1.04,5.75s-.35,3.99-1.04,5.75-1.68,3.29-2.97,4.59c-1.29,1.3-2.79,2.32-4.51,3.03s-3.61,1.08-5.69,1.08ZM260,63.23c1.17,0,2.26-.21,3.25-.64,1-.43,1.86-1.04,2.58-1.84s1.28-1.73,1.7-2.79c.41-1.06.62-2.24.62-3.51s-.21-2.45-.62-3.51c-.41-1.06-.98-1.99-1.7-2.77s-1.58-1.4-2.58-1.84-2.08-.66-3.25-.66-2.25.22-3.23.66c-.99.44-1.85,1.05-2.6,1.84s-1.31,1.71-1.7,2.77-.58,2.24-.58,3.51.19,2.45.58,3.51c.39,1.06.95,2,1.7,2.79.74.8,1.61,1.41,2.6,1.84.98.43,2.06.64,3.23.64Z" style="fill:#fff;"/><path d="M292.02,68.9c-2.05,0-3.94-.36-5.67-1.08s-3.24-1.72-4.53-3.01-2.28-2.82-2.97-4.59-1.04-3.69-1.04-5.77.35-4.03,1.04-5.77,1.68-3.27,2.97-4.57,2.8-2.32,4.53-3.03c1.73-.72,3.62-1.08,5.67-1.08s3.97.36,5.69,1.08,3.22,1.73,4.51,3.03,2.28,2.83,2.97,4.59c.69,1.76,1.04,3.67,1.04,5.75s-.35,3.99-1.04,5.75-1.68,3.29-2.97,4.59c-1.29,1.3-2.79,2.32-4.51,3.03s-3.61,1.08-5.69,1.08ZM292.02,63.23c1.17,0,2.26-.21,3.25-.64,1-.43,1.86-1.04,2.58-1.84s1.28-1.73,1.7-2.79c.41-1.06.62-2.24.62-3.51s-.21-2.45-.62-3.51c-.41-1.06-.98-1.99-1.7-2.77s-1.58-1.4-2.58-1.84-2.08-.66-3.25-.66-2.25.22-3.23.66c-.99.44-1.85,1.05-2.6,1.84s-1.31,1.71-1.7,2.77-.58,2.24-.58,3.51.19,2.45.58,3.51c.39,1.06.95,2,1.7,2.79.74.8,1.61,1.41,2.6,1.84.98.43,2.06.64,3.23.64Z" style="fill:#fff;"/><path d="M311.66,68.5v-27.95h12.38c1.73,0,3.3.39,4.71,1.18s2.52,1.84,3.33,3.17,1.22,2.85,1.22,4.55-.41,3.2-1.22,4.57-1.92,2.46-3.33,3.25c-1.41.8-2.98,1.2-4.71,1.2h-6.59v10.02h-5.79ZM317.45,53.61h6.31c.72,0,1.35-.17,1.9-.5.54-.33.96-.8,1.26-1.4.29-.6.44-1.27.44-2.02,0-.8-.17-1.49-.52-2.08-.35-.58-.85-1.04-1.52-1.38-.67-.33-1.44-.5-2.32-.5h-5.55v7.87h0ZM327.52,68.5l-7.11-12.62,6.15-1,7.91,13.65-6.95-.04h0Z" style="fill:#fff;"/><path d="M360.49,68.9c-1.41,0-2.74-.2-3.99-.6s-2.4-1-3.43-1.8c-1.04-.8-1.96-1.78-2.75-2.95l2.16-2.4c1.25,1.78,2.54,3.03,3.85,3.75s2.8,1.08,4.45,1.08c1.2,0,2.29-.2,3.27-.6.98-.4,1.76-.96,2.32-1.68s.84-1.54.84-2.48c0-.61-.1-1.16-.3-1.64-.2-.48-.5-.9-.9-1.28-.4-.37-.89-.71-1.48-1s-1.26-.56-2.02-.8c-.76-.24-1.6-.48-2.54-.72-1.36-.32-2.55-.7-3.57-1.14-1.03-.44-1.89-.98-2.6-1.62s-1.24-1.38-1.6-2.22c-.36-.84-.54-1.83-.54-2.97s.23-2.1.7-3.03,1.11-1.74,1.94-2.42c.82-.68,1.8-1.2,2.91-1.58,1.12-.37,2.32-.56,3.59-.56,1.44,0,2.72.19,3.85.58,1.13.39,2.14.95,3.01,1.7s1.64,1.64,2.28,2.67l-2.2,2.16c-.56-.88-1.19-1.64-1.9-2.28s-1.48-1.12-2.32-1.46c-.84-.33-1.76-.5-2.77-.5-1.17,0-2.2.2-3.09.6-.89.4-1.59.95-2.1,1.66s-.76,1.51-.76,2.42c0,.67.12,1.26.36,1.78s.62.97,1.14,1.36c.52.39,1.2.73,2.04,1.04s1.84.59,3.01.86c1.38.32,2.63.71,3.73,1.16s2.05.99,2.83,1.62c.78.63,1.38,1.35,1.8,2.18.41.83.62,1.77.62,2.83,0,1.65-.41,3.09-1.24,4.33-.83,1.24-1.98,2.2-3.45,2.89-1.48.69-3.2,1.04-5.17,1.04l.02.02Z" style="fill:#fff;"/><path d="M373.55,50.53v-2.87h12.98v2.87h-12.98ZM378.26,68.5v-26.31h2.99v26.31h-2.99Z" style="fill:#fff;"/><path d="M399.38,68.9c-2.08,0-3.92-.47-5.53-1.4s-2.88-2.22-3.79-3.87c-.92-1.65-1.38-3.53-1.38-5.63s.46-3.93,1.38-5.55,2.18-2.9,3.79-3.83c1.61-.93,3.45-1.4,5.53-1.4s3.88.47,5.49,1.4,2.87,2.21,3.79,3.83c.92,1.62,1.38,3.47,1.38,5.55s-.46,3.98-1.38,5.63-2.18,2.94-3.79,3.87c-1.61.93-3.44,1.4-5.49,1.4ZM399.38,66.06c1.46,0,2.77-.35,3.91-1.06,1.14-.7,2.04-1.66,2.67-2.87.64-1.21.96-2.59.96-4.13s-.32-2.91-.96-4.11c-.64-1.2-1.53-2.14-2.67-2.81-1.15-.68-2.45-1.02-3.91-1.02s-2.77.34-3.93,1.02-2.06,1.62-2.71,2.83-.96,2.58-.94,4.09c-.03,1.54.29,2.92.94,4.13s1.56,2.17,2.71,2.87c1.16.71,2.47,1.06,3.93,1.06Z" style="fill:#fff;"/><path d="M414.35,68.5v-20.84h2.99l.08,5.55-.32-.76c.29-.93.76-1.8,1.42-2.6.65-.8,1.43-1.44,2.34-1.92.9-.48,1.9-.72,2.99-.72.45,0,.88.03,1.28.1s.73.15,1,.26l-.84,3.35c-.35-.16-.7-.27-1.06-.34s-.7-.1-1.02-.1c-.91,0-1.72.16-2.44.48s-1.33.77-1.84,1.34-.89,1.23-1.16,1.98-.4,1.54-.4,2.4v11.82h-3.03.01Z" style="fill:#fff;"/><path d="M437.59,68.9c-2.08,0-3.92-.45-5.53-1.36-1.61-.9-2.87-2.17-3.77-3.79-.91-1.62-1.36-3.49-1.36-5.59,0-1.62.25-3.09.76-4.41s1.22-2.47,2.14-3.45,2.02-1.75,3.29-2.3c1.28-.55,2.66-.82,4.15-.82,1.41,0,2.69.25,3.85.76s2.16,1.2,2.99,2.1c.84.89,1.47,1.95,1.9,3.17s.61,2.57.56,4.03l-.04,1.4h-17.37l-.44-2.52h15.53l-.72.68v-.96c-.05-.96-.33-1.88-.84-2.77s-1.22-1.62-2.14-2.18-2.02-.84-3.29-.84c-1.49,0-2.78.3-3.87.9-1.09.6-1.93,1.48-2.52,2.65-.59,1.17-.88,2.62-.88,4.35s.32,3.08.96,4.29c.64,1.21,1.55,2.15,2.73,2.81,1.18.67,2.62,1,4.29,1,.98,0,1.96-.17,2.93-.5s2.04-.99,3.21-1.98l1.56,2.16c-.61.61-1.34,1.15-2.2,1.62-.85.47-1.78.84-2.79,1.12-1.01.28-2.05.42-3.11.42h.02Z" style="fill:#fff;"/></g></g></svg>
+                </div>
+                <div class="col-12 col-md-8 ps-md-4 col-lg-9 footer-text py-2 mb-lg-5 d-flex align-items-center">
+                    SUPPLYING AND FITTING DOORS THROUGHOUT SCOTLAND AND THE NORTH OF ENGLAND
+                </div>
+      
+                <!-- Site Information -->
+                <div class="col-lg-3 shfooter">
+                  <h3 class="footer-title d-none d-lg-block">About Us</h3>
+                  <div class="d-lg-none title" data-bs-target="#siteInfo" data-bs-toggle="collapse">
+                    <div class="py-3 footer-title d-flex align-items-center justify-content-between">About Us
+                      <div class="navbar-toggler">
+                        <svg class="fas fa-angle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                        <svg class="fas fa-angle-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+                    </div>
+                    </div>
+                  </div>
+                    <ul class="list-unstyled collapse pb-md-0 pt-lg-3" id="siteInfo">
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Door Hanging & Fitting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Joinery Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Door Manufacturing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Delivery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Areas We Cover
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> What our Customers Say
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Privacy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Site Map
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- End Site Information -->
+                
+                <hr class="clearfix w-100 d-lg-none mb-0">
+      
+                <!-- Showroom -->
+                <div class="col-lg-3 shfooter">
+                  <h3 class="footer-title d-none d-lg-block">Our Showroom</h3>
+                  <div class="d-lg-none title" data-bs-target="#showroom" data-bs-toggle="collapse">
+                    <div class="py-3 footer-title d-flex align-items-center justify-content-between">Our Showroom
+                      <div class="navbar-toggler">
+                        <svg class="fas fa-angle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                        <svg class="fas fa-angle-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+                  </div>
+                    </div>
+                  </div>
+                  <div class="collapse pb-md-0 pt-lg-3" id="showroom">
+                    <p>23 Scott's Road, Paisley,</p>
+                    <p>Glasgow. PA2 7AN <br></p>
+                    <h4>OPENING TIMES</h4>
+                    <p>Monday: Friday: 9.00am - 5.00pm</p>
+                    <p>Saturday: 10.00am - 4.00pm</p>
+                    <p>Sunday: CLOSED</p>
+                  </div>
+                
+                </div><!-- End Showroom -->
+                
+                <hr class="clearfix w-100 d-lg-none mb-0">
+
+                <!-- Doors -->
+                <div class="col-lg-3 shfooter">
+                    <h3 class="footer-title d-none d-lg-block">Doors</h3>
+                    <div class="d-lg-none title" data-bs-target="#doorsFooter" data-bs-toggle="collapse">
+                      <div class="py-3 footer-title d-flex align-items-center justify-content-between">Doors
+                        <div class="navbar-toggler">
+                            <svg class="fas fa-angle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                            <svg class="fas fa-angle-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+                         </div>
+                      </div>
+                    </div>
+                      <ul class="list-unstyled collapse pb-md-0 pt-lg-3" id="doorsFooter">
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Composite Doors
+                            </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span>&#187;</span> UPVC Front Doors
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span>&#187;</span> UPVC Back Doors
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span>&#187;</span> Never Paint again Doors
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span>&#187;</span> French Doors
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span>&#187;</span> Oak Doors
+                              </a>
+                          </li>
+                      </ul>
+                  </div><!-- End Doors -->
+
+                  <hr class="clearfix w-100 d-lg-none mb-0">
+
+                  <!--Products -->
+                <div class="col-lg-3 col-xl-2 shfooter">
+                    <h3 class="footer-title d-none d-lg-block">Products</h3>
+                    <div class="d-lg-none title" data-bs-target="#productsFooter" data-bs-toggle="collapse">
+                      <div class="py-3 footer-title d-flex align-items-center justify-content-between">Products
+                        <div class="navbar-toggler">
+                            <svg class="fas fa-angle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                            <svg class="fas fa-angle-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+                         </div>
+                      </div>
+                    </div>
+                      <ul class="list-unstyled collapse pb-md-0 pt-lg-3" id="productsFooter">
+                        <li>
+                            <a href="#">
+                                <span>&#187;</span> Door Handles
+                            </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <span>&#187;</span> Media Walls
+                              </a>
+                          </li>
+                      </ul>
+                  </div><!-- End Products -->
+                
+                
+                <hr class="clearfix w-100 d-lg-none mb-0">
+
+                <!-- Social -->
+                <div class="col-lg-1 col-md-2 shfooter social-footer">
+                    <h3 class="footer-title d-none pb-lg-3 ">FOLLOW US</h3>
+                    <div class="d-lg-none title" data-bs-target="#Resources" data-bs-toggle="collapse">
+                      <div class="py-3 footer-title d-flex align-items-center justify-content-between d-none">FOLLOW US
+                  
+                      </div>
+                    </div>
+                   
+                    <div class="social-logos d-flex flex-row mt-3 mt-xl-0">
+                        <div class="social-logos d-flex flex-xl-column">
+                            <a href="#"> 
+                                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.93 10.56"><g id="Layer_1-2"><path d="M3.28,10.56H1.09v-5.28H0v-1.82h1.09v-1.09C1.09.88,1.71,0,3.46,0h1.46v1.82h-.91c-.68,0-.73.26-.73.73v.91h1.65l-.19,1.82h-1.46v5.28" style="fill:#fff; fill-rule:evenodd; stroke-width:0px;"/></g></svg>
+                            </a>
+                            <a href="#">
+                                <svg id="Layer_22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.04 11.35"><g id="Layer_1-22"><polyline points="13.02 2.18 10.79 2.23 10.73 0 10.17 .01 10.23 2.25 7.99 2.31 8.01 2.87 10.24 2.81 10.3 5.04 10.86 5.03 10.8 2.79 13.04 2.74 13.02 2.18" style="fill:#fff; stroke-width:0px;"/><path d="M5.65,6.56c-.32-.21-.93-.73-.94-1.05,0-.37.09-.56.64-1,.56-.46.95-1.1.93-1.83-.02-.87-.43-1.71-1.17-1.97l1.1-.03.76-.58-3.45.09C1.97.23.54,1.44.58,2.8c.04,1.39,1.12,2.48,2.7,2.44.11,0,.22,0,.32-.02-.1.2-.16.42-.16.65.01.39.23.69.49.94-.2,0-.39.02-.6.02C1.41,6.88-.03,8.14,0,9.41c.03,1.25,1.67,1.99,3.59,1.94,2.19-.06,3.36-1.33,3.33-2.58-.03-1-.34-1.59-1.27-2.21M3.76,4.87c-.89,0-1.76-.95-1.95-2.11-.18-1.17.39-2.07,1.28-2.07.89,0,1.76.92,1.95,2.08.18,1.16-.39,2.11-1.28,2.1M3.57,10.8c-1.33.04-2.31-.78-2.33-1.79-.03-.99,1.14-1.84,2.47-1.86.31,0,.6.04.86.12.73.48,1.26.75,1.42,1.32.03.12.05.23.05.36.03,1.01-.6,1.81-2.47,1.86" style="fill:#fff; stroke-width:0px;"/></g></svg>
+                            </a>
+                        </div>
+                    </div>
+                 
+                  </div><!-- End Social -->
+      
+              
+                
+              </div><!-- /.row  -->
+            </div> <!-- /.container  -->
+            <!-- End Footer Links-->
+      
+            <!-- Copyright -->
+            <div class="sub-footer mt-3 py-4">
+                <div class="container py-0">
+                    <p class="footer-last mb-0 text-center text-md-start">&copy; THE DOOR STORE <span class="current-year"></span></p>
+                </div>
+            </div>
+            <!-- End Copyright -->
+            
+          </footer>
+        <!-- End Footer  -->
+        <script src='/scripts/bootstrap.bundle.min.js'></script>   
+        <script src='/scripts/burger-toggle.js'></script>
+        <script src='/scripts/search-toggle.js'></script> 
+        <script src="/scripts/current-year.js"></script>
+        <script src='/scripts/swiper-bundle.min.js'></script>   
+        <script src='/scripts/swiper.js'></script>   
+        <script src='/scripts/aos.js'></script>   
+        <script src='/scripts/hexagon-size.js'></script>
+    </body>
+</html>

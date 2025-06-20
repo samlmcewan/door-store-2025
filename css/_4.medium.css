@@ -170,10 +170,20 @@
         z-index: 1;
     }
 
+    .door-cards-1 .title h2 {
+        font-size: .7rem;
+    }
+    .door-cards-1 .foot p {
+        font-size: 0.5rem;
+    }
+
     /* Footer - Medium devices */
 
     .shfooter .collapse {
         display: none;
+    }
+    footer .footer-text {
+        font-size: 1rem;
     }
   
     

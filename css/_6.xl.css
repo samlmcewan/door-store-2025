@@ -125,6 +125,48 @@
     .testimonials p:nth-of-type(3) {
         font-size: 1rem;
     }
+    .door-cards-1 {
+        position: relative;
+    }
+    .door-cards-1 .title h2 {
+        font-size: 1.25rem;
+    }
+    .door-cards-1 .foot p {
+        font-size: 0.875rem;
+    }
+
+    .door-cards-1 {
+        background-color: transparent;
+        position: relative;
+    }
+    .door-cards-1 .container {
+        position: relative;
+    }
+    .door-cards-1 .gray-hex {
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        width: 140%;
+        height: 140%;
+        background-color: var(--grayLight);
+        position: absolute;
+        top: -20%;
+        left: -20%;
+
+
+    transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    footer .footer-text {
+        font-size: 1.25rem;
+    }
+    footer .footer-logo svg {
+        width: 18rem!important;
+    }
+    #footer .social-logos a svg {
+        
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
     
 }
         
