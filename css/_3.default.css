@@ -447,7 +447,7 @@ p {
 }
 .breadcrumb-item a {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
 }
 .breadcrumb-item.active {
@@ -717,7 +717,7 @@ p {
 
 
 /*--------------------------------------------------------------
-# Inner Header
+# Inner Header 1
 --------------------------------------------------------------*/
 .inner-header-1 {
     background-color: var(--black);
@@ -739,6 +739,32 @@ p {
     width: 100%;
     object-fit: cover;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+/*--------------------------------------------------------------
+# Inner Header 2
+--------------------------------------------------------------*/
+.inner-header-2 {
+    background-color: var(--black);
+}
+.inner-header-2 h1 {
+    color: var(--white);
+}
+.inner-header-2 p {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.inner-header-2 p:last-of-type {
+    margin-bottom: 0;
+}
+.inner-header-2-title {
+    background-color: var(--blue);
+    width: 100%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*--------------------------------------------------------------
 # Door Cards 1

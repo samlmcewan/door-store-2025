@@ -168,3 +168,13 @@ blueHexagons.forEach(h => {
   const blueHexWidth = h.offsetWidth;
   h.style.height = `${blueHexWidth}px`;
 })
+
+
+// Inner Header 2
+
+const innerHeaderHexagons = document.querySelectorAll('.inner-header-2-title');
+
+innerHeaderHexagons.forEach(hx => {
+  const innerHeaderHexWidth = hx.offsetWidth;
+  hx.style.height = `${innerHeaderHexWidth - 50}px`;
+})
