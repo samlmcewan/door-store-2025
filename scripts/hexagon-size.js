@@ -178,3 +178,25 @@ innerHeaderHexagons.forEach(hx => {
   const innerHeaderHexWidth = hx.offsetWidth;
   hx.style.height = `${innerHeaderHexWidth - 50}px`;
 })
+
+
+
+// Door Cards 2 
+
+const blueHexagons2 = document.querySelectorAll('.door-card-2-container .foot');
+
+blueHexagons2.forEach(h2 => {
+  const blueHex2Width = h2.offsetWidth;
+  h2.style.height = `${blueHex2Width}px`;
+})
+
+// Door product hexagons
+
+const blueHexagons3 = document.querySelectorAll('.blue-hex-product');
+
+blueHexagons3.forEach(h3 => {
+  const blueHex3Width = h3.offsetWidth;
+  h3.style.height = `${blueHex3Width}px`;
+})
+
+

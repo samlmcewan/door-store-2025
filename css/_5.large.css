@@ -36,6 +36,16 @@
 .door-cards-1 .foot p {
     font-size: 0.7rem;
 }
+.door-product-inner .hex-container .blue-hex-product svg {
+    max-height: 4.5rem;
+    width: 45%;
+}
+.door-product-inner .hex-container .blue-hex-product h4 {
+    font-size: 1.25rem;
+}
+.door-product-inner .hex-container .blue-hex-product p {
+    font-size: 1rem;
+}
 /* Footer - Large Devices */
 
 .shfooter .collapse {

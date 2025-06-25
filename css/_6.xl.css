@@ -125,7 +125,7 @@
     .testimonials p:nth-of-type(3) {
         font-size: 1rem;
     }
-    .door-cards-1 {
+    .door-cards-1, .door-cards-2 {
         position: relative;
     }
     .door-cards-1 .title h2 {
@@ -135,14 +135,14 @@
         font-size: 0.875rem;
     }
 
-    .door-cards-1 {
+    .door-cards-1, .door-cards-2 {
         background-color: transparent;
         position: relative;
     }
-    .door-cards-1 .container {
+    .door-cards-1 .container, .door-cards-2 .container {
         position: relative;
     }
-    .door-cards-1 .gray-hex {
+    .door-cards-1 .gray-hex, .door-cards-2 .gray-hex {
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         width: 140%;
         height: 140%;
@@ -150,10 +150,29 @@
         position: absolute;
         top: -20%;
         left: -20%;
-
-
     transform: rotate(90deg);
         z-index: -1;
+    }
+
+    .door-cards-2 .title h2 {
+        font-size: 2rem;
+    }
+    .door-cards-2 .title p {
+        font-size: 1rem;
+    }
+    .door-cards-2 .foot p {
+        font-size: 0.875rem;
+    }
+
+    .door-product-inner .hex-container .blue-hex-product svg {
+        max-height: 7vw;
+        width: 45%;
+    }
+    .door-product-inner .hex-container .blue-hex-product h4 {
+        font-size: 1.75rem;
+    }
+    .door-product-inner .hex-container .blue-hex-product p {
+        font-size: 1.25rem;
     }
 
     footer .footer-text {
